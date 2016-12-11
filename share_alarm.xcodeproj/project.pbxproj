@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		8FBA88201DFD26BE00A2FC61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA881F1DFD26BE00A2FC61 /* AppDelegate.swift */; };
-		8FBA88221DFD26BE00A2FC61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA88211DFD26BE00A2FC61 /* ViewController.swift */; };
+		8FBA88221DFD26BE00A2FC61 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA88211DFD26BE00A2FC61 /* TopViewController.swift */; };
 		8FBA88251DFD26BE00A2FC61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FBA88231DFD26BE00A2FC61 /* Main.storyboard */; };
 		8FBA88271DFD26BE00A2FC61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FBA88261DFD26BE00A2FC61 /* Assets.xcassets */; };
 		8FBA882A1DFD26BE00A2FC61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FBA88281DFD26BE00A2FC61 /* LaunchScreen.storyboard */; };
 		8FBA88351DFD26BE00A2FC61 /* share_alarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA88341DFD26BE00A2FC61 /* share_alarmTests.swift */; };
 		8FBA88401DFD26BF00A2FC61 /* share_alarmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA883F1DFD26BF00A2FC61 /* share_alarmUITests.swift */; };
+		8FBA884E1DFD2C3500A2FC61 /* AlarmCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA884D1DFD2C3500A2FC61 /* AlarmCreateViewController.swift */; };
+		8FBA88521DFD2F7A00A2FC61 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA88511DFD2F7A00A2FC61 /* Alarm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		8FBA881C1DFD26BE00A2FC61 /* share_alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = share_alarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FBA881F1DFD26BE00A2FC61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8FBA88211DFD26BE00A2FC61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8FBA88211DFD26BE00A2FC61 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		8FBA88241DFD26BE00A2FC61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8FBA88261DFD26BE00A2FC61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FBA88291DFD26BE00A2FC61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		8FBA883B1DFD26BF00A2FC61 /* share_alarmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = share_alarmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FBA883F1DFD26BF00A2FC61 /* share_alarmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = share_alarmUITests.swift; sourceTree = "<group>"; };
 		8FBA88411DFD26BF00A2FC61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FBA884D1DFD2C3500A2FC61 /* AlarmCreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmCreateViewController.swift; sourceTree = "<group>"; };
+		8FBA88511DFD2F7A00A2FC61 /* Alarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +101,11 @@
 		8FBA881E1DFD26BE00A2FC61 /* share_alarm */ = {
 			isa = PBXGroup;
 			children = (
+				8FBA88501DFD2F4400A2FC61 /* Model */,
 				8FBA881F1DFD26BE00A2FC61 /* AppDelegate.swift */,
-				8FBA88211DFD26BE00A2FC61 /* ViewController.swift */,
+				8FBA88211DFD26BE00A2FC61 /* TopViewController.swift */,
 				8FBA88231DFD26BE00A2FC61 /* Main.storyboard */,
+				8FBA884D1DFD2C3500A2FC61 /* AlarmCreateViewController.swift */,
 				8FBA88261DFD26BE00A2FC61 /* Assets.xcassets */,
 				8FBA88281DFD26BE00A2FC61 /* LaunchScreen.storyboard */,
 				8FBA882B1DFD26BE00A2FC61 /* Info.plist */,
@@ -123,6 +129,14 @@
 				8FBA88411DFD26BF00A2FC61 /* Info.plist */,
 			);
 			path = share_alarmUITests;
+			sourceTree = "<group>";
+		};
+		8FBA88501DFD2F4400A2FC61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8FBA88511DFD2F7A00A2FC61 /* Alarm.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FBA88221DFD26BE00A2FC61 /* ViewController.swift in Sources */,
+				8FBA88221DFD26BE00A2FC61 /* TopViewController.swift in Sources */,
+				8FBA884E1DFD2C3500A2FC61 /* AlarmCreateViewController.swift in Sources */,
 				8FBA88201DFD26BE00A2FC61 /* AppDelegate.swift in Sources */,
+				8FBA88521DFD2F7A00A2FC61 /* Alarm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
