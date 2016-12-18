@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pcp-ku-qyx">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pcp-ku-qyx">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,7 +19,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="トップ画面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3x-ga-gaK">
@@ -36,6 +37,14 @@
                                     <segue destination="XVl-9l-0wz" kind="show" id="7KP-Ty-pSj"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6w-Le-jaz">
+                                <rect key="frame" x="106" y="419" width="108" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="アラーム一覧へ"/>
+                                <connections>
+                                    <segue destination="nM2-8Y-hWi" kind="show" id="R1u-Ue-T7S"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -43,7 +52,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+            <point key="canvasLocation" x="1074.375" y="138.38028169014083"/>
         </scene>
         <!--Alarm Create View Controller-->
         <scene sceneID="xmh-hq-RPf">
@@ -54,7 +63,7 @@
                         <viewControllerLayoutGuide type="bottom" id="QFn-Q2-wbK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ff5-8c-fCs">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="アラームを作る画面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kW8-kj-hs2">
@@ -74,6 +83,14 @@
                                     <action selector="input:" destination="XVl-9l-0wz" eventType="editingChanged" id="6uZ-eG-7dG"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHN-8h-h8h">
+                                <rect key="frame" x="145" y="325" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="音楽選択"/>
+                                <connections>
+                                    <segue destination="yZ7-4n-YnJ" kind="show" id="HpP-Ty-iiS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -81,6 +98,72 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fZD-st-cLH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1890" y="139"/>
+        </scene>
+        <!--Alarm Create View Controller-->
+        <scene sceneID="Xwo-O3-38O">
+            <objects>
+                <viewController id="nM2-8Y-hWi" customClass="AlarmCreateViewController" customModule="share_alarm" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="emf-ub-1sH"/>
+                        <viewControllerLayoutGuide type="bottom" id="A7X-kv-ETm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Prp-Vl-1BA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tuQ-xM-hhw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1479" y="974"/>
+        </scene>
+        <!--Music Selector View Controller-->
+        <scene sceneID="PGl-JD-gfA">
+            <objects>
+                <viewController id="yZ7-4n-YnJ" customClass="MusicSelectorViewController" customModule="share_alarm" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RV5-pR-oTC"/>
+                        <viewControllerLayoutGuide type="bottom" id="b5p-Vp-AIm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F3p-Jh-CdV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vuf-PI-KcM" userLabel="avContainer">
+                                <rect key="frame" x="242" y="493" width="62" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="nCK-61-aau">
+                                <rect key="frame" x="0.0" y="88" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="0YU-qG-1mg"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SAc-3F-rQn">
+                                <rect key="frame" x="16" y="154" width="288" height="303"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SAc-3F-rQn" firstAttribute="top" secondItem="nCK-61-aau" secondAttribute="bottom" constant="22" id="DY3-4y-O6r"/>
+                            <constraint firstItem="SAc-3F-rQn" firstAttribute="top" secondItem="F3p-Jh-CdV" secondAttribute="top" constant="154" id="KSS-l0-6wx"/>
+                            <constraint firstItem="SAc-3F-rQn" firstAttribute="centerX" secondItem="nCK-61-aau" secondAttribute="centerX" id="Wqw-so-6iy"/>
+                            <constraint firstItem="SAc-3F-rQn" firstAttribute="trailing" secondItem="F3p-Jh-CdV" secondAttribute="trailingMargin" id="e7H-KD-Pys"/>
+                            <constraint firstItem="SAc-3F-rQn" firstAttribute="leading" secondItem="F3p-Jh-CdV" secondAttribute="leadingMargin" id="jk4-vR-XfK"/>
+                            <constraint firstAttribute="bottom" secondItem="SAc-3F-rQn" secondAttribute="bottom" constant="111" id="uPT-pF-aFT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="avContainer" destination="vuf-PI-KcM" id="qKW-A9-X98"/>
+                        <outlet property="parentView" destination="SAc-3F-rQn" id="XMF-LN-cBA"/>
+                        <outlet property="searchBar" destination="nCK-61-aau" id="UU1-TN-3QW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LXp-Tu-cJu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2728" y="919"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Un7-QL-nHX">

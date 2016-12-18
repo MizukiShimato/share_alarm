@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "85A041368092109E1AF738FC606F7EFB8236764E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "9A6E796F992062D23BD742E3A3F06A098ED867E9" : 9223372036854775807,
+    "9C08024C8B5DC500779415795EB7CD60859313CA" : 9223372036854775807,
+    "85A041368092109E1AF738FC606F7EFB8236764E" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2213F322-89CA-4D25-A0BA-C6A9D7754E38",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "9A6E796F992062D23BD742E3A3F06A098ED867E9" : "..",
+    "9C08024C8B5DC500779415795EB7CD60859313CA" : "",
+    "85A041368092109E1AF738FC606F7EFB8236764E" : "share_alarm\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "share_alarm",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "share_alarm.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/MizukiShimato\/share_alarm.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "85A041368092109E1AF738FC606F7EFB8236764E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:ryota0624\/apj_sample.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9A6E796F992062D23BD742E3A3F06A098ED867E9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/MizukiShimato\/APJ.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9C08024C8B5DC500779415795EB7CD60859313CA"
+    }
+  ]
+}
