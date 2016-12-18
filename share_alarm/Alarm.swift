@@ -13,13 +13,8 @@ class Alarm {
     var duration: Int?
     var musicURL: String?
     var vibration: Bool?
-    
-   
-    }
-    
-    
-    
-    
+}
+
 func initialAlarm() ->Alarm {
     return Alarm()
 }
