@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 extension UIViewController {
-    func addSubvieWithAutoLayout(childView: UIView, parentView: UIView) {
+    func addSubvieWithAutoLayout(_ childView: UIView, parentView: UIView) {
         parentView.addSubview(childView)
         childView.frame.size = parentView.frame.size
     }

@@ -28,7 +28,7 @@ class MusicSelectorViewController: UIViewController {
         trackList = UINib(nibName: "TrackList", bundle: nil).instantiate(withOwner: self, options: nil).first as? TrackList
         searchBar.delegate = self
         trackList.trackListDelegate = self
-        addSubvieWithAutoLayout(childView: trackList, parentView: parentView)
+        addSubvieWithAutoLayout(trackList, parentView: parentView)
         
     }
     

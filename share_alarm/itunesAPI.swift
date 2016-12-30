@@ -18,7 +18,7 @@ class ItunesAPI {
         {
             Alamofire.request(url).responseJSON (completionHandler: { response in
                 if let data = response.result.value {
-                    let tracks = responseToTracks(json: JSON(data))
+                    let tracks = responseToTracks(JSON(data))
                     cb(tracks)
                 }
             })
@@ -26,11 +26,11 @@ class ItunesAPI {
     }
 }
 
-func responseToTracks(json: JSON) -> [Track] {
-    return json["results"].map { _, json in jsonToTrack(json: json) }
+func responseToTracks(_ json: JSON) -> [Track] {
+    return json["results"].map { _, json in jsonToTrack(json) }
 }
 
-func jsonToTrack(json: JSON) -> Track {
+func jsonToTrack(_ json: JSON) -> Track {
     return Track(
         artistName: json["artistName"].stringValue,
         artistViewUrl: json["artistViewUrl"].stringValue,
