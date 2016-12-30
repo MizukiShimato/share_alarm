@@ -18,7 +18,6 @@
 		8FBA88351DFD26BE00A2FC61 /* share_alarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA88341DFD26BE00A2FC61 /* share_alarmTests.swift */; };
 		8FBA88401DFD26BF00A2FC61 /* share_alarmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA883F1DFD26BF00A2FC61 /* share_alarmUITests.swift */; };
 		8FBA884E1DFD2C3500A2FC61 /* AlarmCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA884D1DFD2C3500A2FC61 /* AlarmCreateViewController.swift */; };
-		8FBA88521DFD2F7A00A2FC61 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA88511DFD2F7A00A2FC61 /* Alarm.swift */; };
 		A31470571E0672F200AEE46B /* itunesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31470561E0672F200AEE46B /* itunesAPI.swift */; };
 		A31470591E06731900AEE46B /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31470581E06731900AEE46B /* Track.swift */; };
 		A314705B1E06736D00AEE46B /* MusicSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A314705A1E06736D00AEE46B /* MusicSelectorViewController.swift */; };
@@ -33,6 +32,12 @@
 		A31470701E067FB800AEE46B /* AlarmListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A314706F1E067FB800AEE46B /* AlarmListCell.xib */; };
 		A31470721E06804800AEE46B /* AlarmList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31470711E06804800AEE46B /* AlarmList.swift */; };
 		A31470741E06805600AEE46B /* AlarmListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31470731E06805600AEE46B /* AlarmListCell.swift */; };
+		A334CC501E16B2DD006A7645 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA88511DFD2F7A00A2FC61 /* Alarm.swift */; };
+		A334CC5C1E16CB1C006A7645 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A334CC5B1E16CB1C006A7645 /* GoogleService-Info.plist */; };
+		A334CC5D1E16CB1C006A7645 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A334CC5B1E16CB1C006A7645 /* GoogleService-Info.plist */; };
+		A334CC5E1E16CB1C006A7645 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A334CC5B1E16CB1C006A7645 /* GoogleService-Info.plist */; };
+		A3E0E4B81E167A67000DC94F /* AlarmAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E0E4B71E167A67000DC94F /* AlarmAdaptor.swift */; };
+		A3E0E4BB1E167AB6000DC94F /* AlarmFireBaseGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E0E4BA1E167AB6000DC94F /* AlarmFireBaseGateway.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +91,9 @@
 		A314706F1E067FB800AEE46B /* AlarmListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlarmListCell.xib; sourceTree = "<group>"; };
 		A31470711E06804800AEE46B /* AlarmList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmList.swift; sourceTree = "<group>"; };
 		A31470731E06805600AEE46B /* AlarmListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmListCell.swift; sourceTree = "<group>"; };
+		A334CC5B1E16CB1C006A7645 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A3E0E4B71E167A67000DC94F /* AlarmAdaptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmAdaptor.swift; sourceTree = "<group>"; };
+		A3E0E4BA1E167AB6000DC94F /* AlarmFireBaseGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmFireBaseGateway.swift; sourceTree = "<group>"; };
 		A56D44C18A825CDA1CB0172D /* Pods_share_alarmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_share_alarmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8A686EB3066C3234D186C76 /* Pods-share_alarmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-share_alarmTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-share_alarmTests/Pods-share_alarmTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C3C5B8563EAF7AF9477CB28A /* Pods-share_alarm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-share_alarm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-share_alarm/Pods-share_alarm.debug.xcconfig"; sourceTree = "<group>"; };
@@ -169,6 +177,9 @@
 		8FBA881E1DFD26BE00A2FC61 /* share_alarm */ = {
 			isa = PBXGroup;
 			children = (
+				A334CC5B1E16CB1C006A7645 /* GoogleService-Info.plist */,
+				A3E0E4B91E167A98000DC94F /* Gateways */,
+				A3E0E4B61E167A50000DC94F /* Adaptors */,
 				A31470691E067E1400AEE46B /* alarmList */,
 				A31470551E0672A300AEE46B /* musicSelector */,
 				8FBA88501DFD2F4400A2FC61 /* Model */,
@@ -253,6 +264,22 @@
 			name = view;
 			sourceTree = "<group>";
 		};
+		A3E0E4B61E167A50000DC94F /* Adaptors */ = {
+			isa = PBXGroup;
+			children = (
+				A3E0E4B71E167A67000DC94F /* AlarmAdaptor.swift */,
+			);
+			name = Adaptors;
+			sourceTree = "<group>";
+		};
+		A3E0E4B91E167A98000DC94F /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+				A3E0E4BA1E167AB6000DC94F /* AlarmFireBaseGateway.swift */,
+			);
+			name = Gateways;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -324,23 +351,23 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Mizuki Shimato";
 				TargetAttributes = {
 					8FBA881B1DFD26BE00A2FC61 = {
 						CreatedOnToolsVersion = 8.1;
-						LastSwiftMigration = 0810;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					8FBA882F1DFD26BE00A2FC61 = {
 						CreatedOnToolsVersion = 8.1;
-						LastSwiftMigration = 0810;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 8FBA881B1DFD26BE00A2FC61;
 					};
 					8FBA883A1DFD26BF00A2FC61 = {
 						CreatedOnToolsVersion = 8.1;
-						LastSwiftMigration = 0810;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 8FBA881B1DFD26BE00A2FC61;
 					};
@@ -372,6 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A31470681E0675CA00AEE46B /* TrackList.xib in Resources */,
+				A334CC5C1E16CB1C006A7645 /* GoogleService-Info.plist in Resources */,
 				8FBA882A1DFD26BE00A2FC61 /* LaunchScreen.storyboard in Resources */,
 				8FBA88271DFD26BE00A2FC61 /* Assets.xcassets in Resources */,
 				A314706E1E067FA700AEE46B /* AlarmList.xib in Resources */,
@@ -385,6 +413,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A334CC5D1E16CB1C006A7645 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +421,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A334CC5E1E16CB1C006A7645 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,14 +558,16 @@
 				8FBA88221DFD26BE00A2FC61 /* TopViewController.swift in Sources */,
 				A31470611E06746700AEE46B /* TrackListCell.swift in Sources */,
 				A314705B1E06736D00AEE46B /* MusicSelectorViewController.swift in Sources */,
+				A334CC501E16B2DD006A7645 /* Alarm.swift in Sources */,
 				A314705F1E06742500AEE46B /* UIViewController.swift in Sources */,
+				A3E0E4B81E167A67000DC94F /* AlarmAdaptor.swift in Sources */,
+				A3E0E4BB1E167AB6000DC94F /* AlarmFireBaseGateway.swift in Sources */,
 				A31470571E0672F200AEE46B /* itunesAPI.swift in Sources */,
 				A314705D1E0673BA00AEE46B /* TrackList.swift in Sources */,
 				8FBA884E1DFD2C3500A2FC61 /* AlarmCreateViewController.swift in Sources */,
 				8FBA88201DFD26BE00A2FC61 /* AppDelegate.swift in Sources */,
 				A314706B1E067E4C00AEE46B /* AlarmListViewControlelr.swift in Sources */,
 				A31470741E06805600AEE46B /* AlarmListCell.swift in Sources */,
-				8FBA88521DFD2F7A00A2FC61 /* Alarm.swift in Sources */,
 				A31470591E06731900AEE46B /* Track.swift in Sources */,
 				A31470721E06804800AEE46B /* AlarmList.swift in Sources */,
 				A31470631E0674AB00AEE46B /* imageFetcher.swift in Sources */,
