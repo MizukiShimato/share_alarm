@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0810"
+   LastUpgradeVersion = "0820"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6A4F62B057311E844859281BA6C9268E"
+               BlueprintIdentifier = "5A98B226A66938C2CDA52860B2F09572"
                BuildableName = "Pods_share_alarm.framework"
                BlueprintName = "Pods-share_alarm"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6A4F62B057311E844859281BA6C9268E"
+            BlueprintIdentifier = "5A98B226A66938C2CDA52860B2F09572"
             BuildableName = "Pods_share_alarm.framework"
             BlueprintName = "Pods-share_alarm"
             ReferencedContainer = "container:Pods.xcodeproj">

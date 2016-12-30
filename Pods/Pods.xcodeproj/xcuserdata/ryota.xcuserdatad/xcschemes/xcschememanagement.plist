@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>GTMSessionFetcher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleToolboxForMac.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-share_alarm.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,22 +47,32 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>23BA9083ED0D2392A167A8AFA04427FA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>44E23074299CCD6D19455F4691751587</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6A4F62B057311E844859281BA6C9268E</key>
+		<key>5097479F5BF1C8C6D074D3B6D5A05377</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>710680B9B0157D1628CA74FBDD98CFC7</key>
+		<key>5A98B226A66938C2CDA52860B2F09572</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7D04535608058A2FABC0D16935868FB9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
