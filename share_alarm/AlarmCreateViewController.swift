@@ -11,6 +11,14 @@ import UIKit
 
 class AlarmCreateViewController: UIViewController {
     
+    @IBAction func musicSelect(_ sender: Any) {
+        let storyBoard = UIStoryboard(name: "MusicSelector", bundle: nil)
+        let selector = storyBoard.instantiateViewController(withIdentifier: "MainPage") as! MusicSelectorViewController
+        selector.setAfterSaveHandler { track in
+            self.alarm.musicURL = track.previewUrl
+        }
+        self.present(selector, animated: true, completion: nil)
+    }
     var alarm: Alarm = initialAlarm()
     
     @IBAction func input(_ sender: UITextField) {

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Music Selector View Controller-->
+        <scene sceneID="Z8F-3k-P17">
+            <objects>
+                <viewController restorationIdentifier="MainPage" storyboardIdentifier="MainPage" id="5q6-mD-aQP" customClass="MusicSelectorViewController" customModule="share_alarm" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QQF-1Z-Iof"/>
+                        <viewControllerLayoutGuide type="bottom" id="Z35-Nv-Y1I"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ne8-1g-DKe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uWc-Wo-cci" userLabel="avContainer">
+                                <rect key="frame" x="242" y="493" width="62" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Egf-ca-txa">
+                                <rect key="frame" x="0.0" y="91" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="DGo-29-pnr"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IFS-0m-jdW">
+                                <rect key="frame" x="16" y="154" width="288" height="303"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOg-Pa-ZMG">
+                                <rect key="frame" x="16" y="39" width="58" height="34"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="58" id="hZv-Mx-zwF"/>
+                                    <constraint firstAttribute="height" constant="34" id="x8B-yV-xYs"/>
+                                </constraints>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="5q6-mD-aQP" eventType="touchUpInside" id="fEq-9G-ax1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IFS-0m-jdW" firstAttribute="trailing" secondItem="ne8-1g-DKe" secondAttribute="trailingMargin" id="3Dq-TL-rvV"/>
+                            <constraint firstItem="tOg-Pa-ZMG" firstAttribute="leading" secondItem="IFS-0m-jdW" secondAttribute="leading" id="Gzy-Pg-wpq"/>
+                            <constraint firstItem="IFS-0m-jdW" firstAttribute="top" secondItem="ne8-1g-DKe" secondAttribute="top" constant="154" id="JHZ-UG-QgE"/>
+                            <constraint firstAttribute="bottom" secondItem="IFS-0m-jdW" secondAttribute="bottom" constant="111" id="Ls2-wt-HJ0"/>
+                            <constraint firstItem="IFS-0m-jdW" firstAttribute="top" secondItem="Egf-ca-txa" secondAttribute="bottom" constant="19" id="X7r-qS-QVr"/>
+                            <constraint firstItem="IFS-0m-jdW" firstAttribute="leading" secondItem="ne8-1g-DKe" secondAttribute="leadingMargin" id="XlN-MQ-uLE"/>
+                            <constraint firstItem="tOg-Pa-ZMG" firstAttribute="top" secondItem="QQF-1Z-Iof" secondAttribute="bottom" constant="19" id="esj-mI-CwG"/>
+                            <constraint firstItem="IFS-0m-jdW" firstAttribute="centerX" secondItem="Egf-ca-txa" secondAttribute="centerX" id="hHT-Gr-7XO"/>
+                            <constraint firstItem="Egf-ca-txa" firstAttribute="top" secondItem="tOg-Pa-ZMG" secondAttribute="bottom" constant="18" id="hwC-WM-5Dd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="avContainer" destination="uWc-Wo-cci" id="R3p-AL-ZmY"/>
+                        <outlet property="parentView" destination="IFS-0m-jdW" id="3XX-xW-aNC"/>
+                        <outlet property="searchBar" destination="Egf-ca-txa" id="jeO-cb-bHd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wJx-hD-SDh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2692.5" y="971.83098591549299"/>
+        </scene>
+    </scenes>
+</document>

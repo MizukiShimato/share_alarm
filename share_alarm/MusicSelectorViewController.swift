@@ -18,9 +18,13 @@ class MusicSelectorViewController: UIViewController {
     var currentTrack: Track?
     var currentButton: UIButton?
     
+    @IBAction func backButtonAction(_ sender: Any) {
+        self.dismiss(animated: true)
+    }
     var avPlayer: AVPlayer!
     var avLayer: AVPlayerLayer!
     
+    var handler: ((Track) -> Void)!
     
     
     var trackList: TrackList!
@@ -37,7 +41,10 @@ class MusicSelectorViewController: UIViewController {
             self.trackList.tracks = data
             self.trackList.reloadData()
         }
-        
+    }
+    
+    func setAfterSaveHandler(_ handler: @escaping (Track) -> Void) {
+        self.handler = handler
     }
 }
 
@@ -65,6 +72,7 @@ extension MusicSelectorViewController: TrackListDelegate {
     
     func leftButtonHandler(_ sender: UIButton, _ track: Track) {
         sender.setTitle("再生中", for: UIControlState.normal)
+        self.trackList.currentTrack = track
         if let oldPlayer = self.avPlayer, let button = currentButton, let oldTrack = self.currentTrack {
             if track.previewUrl == oldTrack.previewUrl {
                 return
@@ -96,5 +104,9 @@ extension MusicSelectorViewController: TrackListDelegate {
     }
     
     func rightButtonHandler(_ sender: UIButton, _ track: Track) {
+        self.dismiss(animated: true) { () in
+            self.handler(track)
+        }
+        
     }
 }

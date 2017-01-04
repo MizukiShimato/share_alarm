@@ -19,6 +19,7 @@ class TrackListCell: UITableViewCell, ImageFetchManager {
     @IBOutlet weak var trackName: UILabel!
     var track: Track?
     var delegate: TrackListCellDelegate?
+    @IBOutlet weak var leftButtonView: UIButton!
     
     @IBAction func rightButton(_ sender: UIButton) {
         if let delegate = delegate, let track = track {
@@ -29,6 +30,14 @@ class TrackListCell: UITableViewCell, ImageFetchManager {
     @IBAction func leftButton(_ sender: UIButton) {
         if let delegate = delegate, let track = track {
             delegate.leftButtonHandler(sender, track)
+        }
+    }
+    
+    func statePlay(_ bool: Bool) {
+        if bool {
+            leftButtonView.setTitle("再生中", for: UIControlState.normal)
+        } else {
+            leftButtonView.setTitle("再生", for: UIControlState.normal)
         }
     }
     

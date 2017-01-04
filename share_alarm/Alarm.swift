@@ -16,6 +16,7 @@ class Alarm {
     var id: String?
     var joiendUsers: [JoinedUser] = []
     //TODO: userId
+    //trackName: String
     
     static func create(time: Date, dutation: Int, musicURL: String, vibration: Bool) -> Alarm {
         let alarm = Alarm()

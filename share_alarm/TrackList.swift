@@ -16,6 +16,7 @@ protocol TrackListDelegate: TrackListCellDelegate {
 class TrackList: UITableView {
     var trackListDelegate: TrackListDelegate?
     
+    var currentTrack: Track?
     var tracks: [Track] = []
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
@@ -37,6 +38,9 @@ extension TrackList: UITableViewDataSource, UITableViewDelegate {
         let cell = self.dequeueReusableCell(withIdentifier: "TrackListCell") as! TrackListCell
         
         cell.setTrack(track)
+        if let currentTrack = currentTrack {
+            cell.statePlay(currentTrack.previewUrl == track.previewUrl)
+        }
         cell.delegate = self.trackListDelegate
         
         return cell
