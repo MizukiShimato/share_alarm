@@ -40,10 +40,14 @@ class AlartFilebase {
         })
     }
     
-    func subscribe(userId: String, alarm: Alarm, cb: @escaping ((Alarm?) -> Void)) {
-        dbref.child(userId).child(alarm.id!).observe(.value, with: { db in
+    func subscribe(userId: String, alarm: Alarm, cb: @escaping ((Alarm?) -> Void)) -> UInt {
+        return dbref.child(userId).child(alarm.id!).observe(.value, with: { db in
             cb(AlartFilebase.toModel(db.value as! Dictionary<String, AnyObject>))
         })
+    }
+    
+    func unsubscribe(userId: String, alarm: Alarm, handlerId: UInt) {
+        dbref.child(userId).child(alarm.id!).removeObserver(withHandle: handlerId)
     }
     
     static func joinedUserToModel(_ dict: [String: AnyObject]) -> JoinedUser? {
