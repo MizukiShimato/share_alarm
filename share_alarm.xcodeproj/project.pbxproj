@@ -32,6 +32,7 @@
 		A31470701E067FB800AEE46B /* AlarmListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A314706F1E067FB800AEE46B /* AlarmListCell.xib */; };
 		A31470721E06804800AEE46B /* AlarmList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31470711E06804800AEE46B /* AlarmList.swift */; };
 		A31470741E06805600AEE46B /* AlarmListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31470731E06805600AEE46B /* AlarmListCell.swift */; };
+		A31C70FA1E1BF32500B6DB6B /* MusicSelector.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A31C70F91E1BF32500B6DB6B /* MusicSelector.storyboard */; };
 		A334CC501E16B2DD006A7645 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA88511DFD2F7A00A2FC61 /* Alarm.swift */; };
 		A334CC5C1E16CB1C006A7645 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A334CC5B1E16CB1C006A7645 /* GoogleService-Info.plist */; };
 		A334CC5D1E16CB1C006A7645 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A334CC5B1E16CB1C006A7645 /* GoogleService-Info.plist */; };
@@ -91,6 +92,7 @@
 		A314706F1E067FB800AEE46B /* AlarmListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlarmListCell.xib; sourceTree = "<group>"; };
 		A31470711E06804800AEE46B /* AlarmList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmList.swift; sourceTree = "<group>"; };
 		A31470731E06805600AEE46B /* AlarmListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmListCell.swift; sourceTree = "<group>"; };
+		A31C70F91E1BF32500B6DB6B /* MusicSelector.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MusicSelector.storyboard; sourceTree = "<group>"; };
 		A334CC5B1E16CB1C006A7645 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A3E0E4B71E167A67000DC94F /* AlarmAdaptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmAdaptor.swift; sourceTree = "<group>"; };
 		A3E0E4BA1E167AB6000DC94F /* AlarmFireBaseGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmFireBaseGateway.swift; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 				A314705A1E06736D00AEE46B /* MusicSelectorViewController.swift */,
 				A314705C1E0673BA00AEE46B /* TrackList.swift */,
 				A31470601E06746700AEE46B /* TrackListCell.swift */,
+				A31C70F91E1BF32500B6DB6B /* MusicSelector.storyboard */,
 			);
 			name = musicSelector;
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 				A314706E1E067FA700AEE46B /* AlarmList.xib in Resources */,
 				8FBA88251DFD26BE00A2FC61 /* Main.storyboard in Resources */,
 				A31470661E06755800AEE46B /* TrackListCell.xib in Resources */,
+				A31C70FA1E1BF32500B6DB6B /* MusicSelector.storyboard in Resources */,
 				A31470701E067FB800AEE46B /* AlarmListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
