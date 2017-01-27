@@ -33,6 +33,14 @@ class Alarm {
         return self
     }
     
+    func validProps() -> Bool {
+        if let _ = time, let _ = duration, let _ = musicURL, let _ = title, let _ = vibration {
+            return true
+        } else {
+            return false
+        }
+    }
+    
     func toHash() -> [String: Any] {
         let vibration = self.vibration.map({ onOrOff -> Int in
             if onOrOff {
@@ -49,7 +57,7 @@ class Alarm {
             users[user.id] = user.toHash()
         }
         
-        return ["id": key!, "duration": self.duration!, "musicURL": self.musicURL!, "vibration": vibration ?? 0 , "joinedUsers": users, "time": self.time!.timeIntervalSince1970]
+        return ["title": self.title!, "id": key!, "duration": self.duration!, "musicURL": self.musicURL!, "vibration": vibration ?? 0 , "joinedUsers": users, "time": self.time!.timeIntervalSince1970]
     }
 }
 

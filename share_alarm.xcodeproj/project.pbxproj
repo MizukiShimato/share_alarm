@@ -38,6 +38,10 @@
 		A334CC5C1E16CB1C006A7645 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A334CC5B1E16CB1C006A7645 /* GoogleService-Info.plist */; };
 		A334CC5D1E16CB1C006A7645 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A334CC5B1E16CB1C006A7645 /* GoogleService-Info.plist */; };
 		A334CC5E1E16CB1C006A7645 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A334CC5B1E16CB1C006A7645 /* GoogleService-Info.plist */; };
+		A33DFEDE1E3BA9E300BC17EF /* InviteInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33DFEDD1E3BA9E300BC17EF /* InviteInputViewController.swift */; };
+		A33DFEE61E3BAE5100BC17EF /* InviteInput.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A33DFEE51E3BAE5100BC17EF /* InviteInput.storyboard */; };
+		A33DFEE81E3BB19000BC17EF /* InviteCodeInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33DFEE71E3BB19000BC17EF /* InviteCodeInputViewController.swift */; };
+		A33DFEEA1E3BB1C800BC17EF /* InviteConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33DFEE91E3BB1C800BC17EF /* InviteConfirmViewController.swift */; };
 		A3E0E4B81E167A67000DC94F /* AlarmAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E0E4B71E167A67000DC94F /* AlarmAdaptor.swift */; };
 		A3E0E4BB1E167AB6000DC94F /* AlarmFireBaseGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E0E4BA1E167AB6000DC94F /* AlarmFireBaseGateway.swift */; };
 /* End PBXBuildFile section */
@@ -96,6 +100,10 @@
 		A31470731E06805600AEE46B /* AlarmListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmListCell.swift; sourceTree = "<group>"; };
 		A31C70F91E1BF32500B6DB6B /* MusicSelector.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MusicSelector.storyboard; sourceTree = "<group>"; };
 		A334CC5B1E16CB1C006A7645 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A33DFEDD1E3BA9E300BC17EF /* InviteInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteInputViewController.swift; sourceTree = "<group>"; };
+		A33DFEE51E3BAE5100BC17EF /* InviteInput.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InviteInput.storyboard; sourceTree = "<group>"; };
+		A33DFEE71E3BB19000BC17EF /* InviteCodeInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteCodeInputViewController.swift; sourceTree = "<group>"; };
+		A33DFEE91E3BB1C800BC17EF /* InviteConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteConfirmViewController.swift; sourceTree = "<group>"; };
 		A3E0E4B71E167A67000DC94F /* AlarmAdaptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmAdaptor.swift; sourceTree = "<group>"; };
 		A3E0E4BA1E167AB6000DC94F /* AlarmFireBaseGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmFireBaseGateway.swift; sourceTree = "<group>"; };
 		A56D44C18A825CDA1CB0172D /* Pods_share_alarmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_share_alarmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,6 +189,7 @@
 		8FBA881E1DFD26BE00A2FC61 /* share_alarm */ = {
 			isa = PBXGroup;
 			children = (
+				A33DFEDF1E3BACCD00BC17EF /* InviteInput */,
 				A334CC5B1E16CB1C006A7645 /* GoogleService-Info.plist */,
 				A3E0E4B91E167A98000DC94F /* Gateways */,
 				A3E0E4B61E167A50000DC94F /* Adaptors */,
@@ -268,6 +277,17 @@
 				A314706F1E067FB800AEE46B /* AlarmListCell.xib */,
 			);
 			name = view;
+			sourceTree = "<group>";
+		};
+		A33DFEDF1E3BACCD00BC17EF /* InviteInput */ = {
+			isa = PBXGroup;
+			children = (
+				A33DFEDD1E3BA9E300BC17EF /* InviteInputViewController.swift */,
+				A33DFEE51E3BAE5100BC17EF /* InviteInput.storyboard */,
+				A33DFEE71E3BB19000BC17EF /* InviteCodeInputViewController.swift */,
+				A33DFEE91E3BB1C800BC17EF /* InviteConfirmViewController.swift */,
+			);
+			name = InviteInput;
 			sourceTree = "<group>";
 		};
 		A3E0E4B61E167A50000DC94F /* Adaptors */ = {
@@ -406,6 +426,7 @@
 			files = (
 				A31470681E0675CA00AEE46B /* TrackList.xib in Resources */,
 				A334CC5C1E16CB1C006A7645 /* GoogleService-Info.plist in Resources */,
+				A33DFEE61E3BAE5100BC17EF /* InviteInput.storyboard in Resources */,
 				8FBA882A1DFD26BE00A2FC61 /* LaunchScreen.storyboard in Resources */,
 				8FBA88271DFD26BE00A2FC61 /* Assets.xcassets in Resources */,
 				A314706E1E067FA700AEE46B /* AlarmList.xib in Resources */,
@@ -566,12 +587,15 @@
 				A31470611E06746700AEE46B /* TrackListCell.swift in Sources */,
 				A314705B1E06736D00AEE46B /* MusicSelectorViewController.swift in Sources */,
 				A334CC501E16B2DD006A7645 /* Alarm.swift in Sources */,
+				A33DFEEA1E3BB1C800BC17EF /* InviteConfirmViewController.swift in Sources */,
 				A314705F1E06742500AEE46B /* UIViewController.swift in Sources */,
 				A3E0E4B81E167A67000DC94F /* AlarmAdaptor.swift in Sources */,
 				A3E0E4BB1E167AB6000DC94F /* AlarmFireBaseGateway.swift in Sources */,
 				A31470571E0672F200AEE46B /* itunesAPI.swift in Sources */,
 				A314705D1E0673BA00AEE46B /* TrackList.swift in Sources */,
 				8FBA884E1DFD2C3500A2FC61 /* AlarmCreateViewController.swift in Sources */,
+				A33DFEDE1E3BA9E300BC17EF /* InviteInputViewController.swift in Sources */,
+				A33DFEE81E3BB19000BC17EF /* InviteCodeInputViewController.swift in Sources */,
 				8FBA88201DFD26BE00A2FC61 /* AppDelegate.swift in Sources */,
 				A314706B1E067E4C00AEE46B /* AlarmListViewControlelr.swift in Sources */,
 				8F0899461E3B68BF00D75CE0 /* AlertListViewController.swift in Sources */,
