@@ -20,7 +20,11 @@ class AlartFilebase {
         userDbref = FIRDatabase.database().reference(withPath: "/user")
     }
     
-    func store(_ alarm: Alarm, userId: String) -> String {
+    func store(_ alarm: Alarm, userId: String) -> String? {
+        if !alarm.validProps() {
+            dump("dbに保存するためのプロパティに埋められていないものがあります")
+            return nil
+        }
         let key = alarmDbref.childByAutoId().key
         alarmDbref.child(userId).child(key).setValue(alarm.set(id: key).toHash())
         userDbref.child(userId).child(userAlarmKey).child(key).setValue(alarm.set(id: key).toHash())
@@ -40,6 +44,9 @@ class AlartFilebase {
     
     func get(userId: String, cb: @escaping ([Alarm]) -> Void) {
         userDbref.child(userId).child(userAlarmKey).observeSingleEvent(of: .value, with: { (db) in
+            if (db.value is NSNull) {
+                return cb([])
+            }
             let dic = db.value as! Dictionary<String, AnyObject>
             cb(dic.flatMap({ model in
                 return AlartFilebase.toModel(model.value as! Dictionary<String, AnyObject>)
