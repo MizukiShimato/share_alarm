@@ -71,10 +71,12 @@ class AlartFilebase {
             let duration = dict["duration"],
             let vibration = dict["vibration"],
             let musicURL = dict["musicURL"],
-            let time = dict["time"]
+            let time = dict["time"],
+            let title = dict["title"]
         {
             let alarm = initialAlarm()
             alarm.id = id as? String
+            alarm.title = title as? String
             alarm.musicURL = musicURL as? String
 
             alarm.duration = Int(duration.stringValue)
