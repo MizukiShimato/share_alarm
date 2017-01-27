@@ -18,15 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FIRApp.configure()
-        AlartFilebase().get(id: "-K_Fx-YoQVRhXI6VKDvY", userId: "ryota", cb: { alarm in
-//            AlartFilebase().subscribe(alarm: alarm, cb: { alarm in dump(alarm)})
-            //            AlartFilebase().updateUserStatus(userId: "ryota", alarm: alarm, me: "ryota", status: JoinedUserStatus.Joined)
-        })
-//            .get(userId: "ryota") { (alarms) in
-//            dump(alarms)
-//        }
-        
-//            .store(Alarm.create(time: Date.init(), dutation: 0, musicURL: "ROck", vibration: true), userId: "ryota")
         return true
     }
 

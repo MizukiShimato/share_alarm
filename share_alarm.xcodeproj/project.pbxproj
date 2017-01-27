@@ -10,6 +10,7 @@
 		072919EF925254359A7FE16E /* Pods_share_alarmUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98AEC9D4BF21459C9E4F6F50 /* Pods_share_alarmUITests.framework */; };
 		1CBA6D22DCE4A5E385FC5CB0 /* Pods_share_alarmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56D44C18A825CDA1CB0172D /* Pods_share_alarmTests.framework */; };
 		2B8DF884EEC22A4BD7F4A6B3 /* Pods_share_alarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9CAE6CDE8DB8B6D00CE5A9F /* Pods_share_alarm.framework */; };
+		8F0899461E3B68BF00D75CE0 /* AlertListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0899451E3B68BF00D75CE0 /* AlertListViewController.swift */; };
 		8FBA88201DFD26BE00A2FC61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA881F1DFD26BE00A2FC61 /* AppDelegate.swift */; };
 		8FBA88221DFD26BE00A2FC61 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA88211DFD26BE00A2FC61 /* TopViewController.swift */; };
 		8FBA88251DFD26BE00A2FC61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FBA88231DFD26BE00A2FC61 /* Main.storyboard */; };
@@ -62,6 +63,7 @@
 		45D41BD0AA52700C674E22BB /* Pods-share_alarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-share_alarm.release.xcconfig"; path = "Pods/Target Support Files/Pods-share_alarm/Pods-share_alarm.release.xcconfig"; sourceTree = "<group>"; };
 		513A098B880ADDAC24171B34 /* Pods-share_alarmUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-share_alarmUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-share_alarmUITests/Pods-share_alarmUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6110475384A2DCAC00E35A04 /* Pods-share_alarmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-share_alarmTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-share_alarmTests/Pods-share_alarmTests.release.xcconfig"; sourceTree = "<group>"; };
+		8F0899451E3B68BF00D75CE0 /* AlertListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertListViewController.swift; sourceTree = "<group>"; };
 		8FBA881C1DFD26BE00A2FC61 /* share_alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = share_alarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FBA881F1DFD26BE00A2FC61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FBA88211DFD26BE00A2FC61 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				8FBA88211DFD26BE00A2FC61 /* TopViewController.swift */,
 				8FBA88231DFD26BE00A2FC61 /* Main.storyboard */,
 				8FBA884D1DFD2C3500A2FC61 /* AlarmCreateViewController.swift */,
+				8F0899451E3B68BF00D75CE0 /* AlertListViewController.swift */,
 				8FBA88261DFD26BE00A2FC61 /* Assets.xcassets */,
 				8FBA88281DFD26BE00A2FC61 /* LaunchScreen.storyboard */,
 				8FBA882B1DFD26BE00A2FC61 /* Info.plist */,
@@ -571,6 +574,7 @@
 				8FBA884E1DFD2C3500A2FC61 /* AlarmCreateViewController.swift in Sources */,
 				8FBA88201DFD26BE00A2FC61 /* AppDelegate.swift in Sources */,
 				A314706B1E067E4C00AEE46B /* AlarmListViewControlelr.swift in Sources */,
+				8F0899461E3B68BF00D75CE0 /* AlertListViewController.swift in Sources */,
 				A31470741E06805600AEE46B /* AlarmListCell.swift in Sources */,
 				A31470591E06731900AEE46B /* Track.swift in Sources */,
 				A31470721E06804800AEE46B /* AlarmList.swift in Sources */,

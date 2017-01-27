@@ -11,6 +11,7 @@ import Foundation
 class Alarm {
     var time: Date?
     var duration: Int?
+    var title: String?
     var musicURL: String?
     var vibration: Bool?
     var id: String?
