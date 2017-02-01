@@ -19,17 +19,13 @@ class InviteCodeInputViewController: UIViewController {
         if let text = inputCodeForm.text {
             let splitedText = text.components(separatedBy: "@")
             let userId = "mizuki"//splitedText[0]
-            let alarmId = "-KbVfgdMzyo78xeATnD2"//splitedText[1]
-            (AlartFilebase()).get(id: alarmId, userId: userId) { alarm in
+            let alarmId = "-KbuU58Wz5h56WBJer_9"//splitedText[1]
+            AlarmService.instance().getOne(id: alarmId, userId: userId) { alarm in
+                dump(alarm)
                 let storyboard: UIStoryboard = self.storyboard!
                 let nextView = storyboard.instantiateViewController(withIdentifier: "InviteConfirm") as! InviteConfirmViewControlelr
-                
                 nextView.alarm = alarm
-                
                 self.navigationController?.pushViewController(nextView, animated: true)
-
-
-                dump(alarm)
             }
         }
     }

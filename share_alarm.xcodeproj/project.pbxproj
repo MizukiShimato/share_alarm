@@ -43,7 +43,7 @@
 		A33DFEE81E3BB19000BC17EF /* InviteCodeInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33DFEE71E3BB19000BC17EF /* InviteCodeInputViewController.swift */; };
 		A33DFEEA1E3BB1C800BC17EF /* InviteConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33DFEE91E3BB1C800BC17EF /* InviteConfirmViewController.swift */; };
 		A35A91B31E42307300CACD77 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A91B21E42307300CACD77 /* User.swift */; };
-		A3E0E4B81E167A67000DC94F /* AlarmAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E0E4B71E167A67000DC94F /* AlarmAdaptor.swift */; };
+		A35A91B61E42360C00CACD77 /* AlarmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A91B51E42360C00CACD77 /* AlarmService.swift */; };
 		A3E0E4BB1E167AB6000DC94F /* AlarmFireBaseGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E0E4BA1E167AB6000DC94F /* AlarmFireBaseGateway.swift */; };
 /* End PBXBuildFile section */
 
@@ -106,7 +106,7 @@
 		A33DFEE71E3BB19000BC17EF /* InviteCodeInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteCodeInputViewController.swift; sourceTree = "<group>"; };
 		A33DFEE91E3BB1C800BC17EF /* InviteConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteConfirmViewController.swift; sourceTree = "<group>"; };
 		A35A91B21E42307300CACD77 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		A3E0E4B71E167A67000DC94F /* AlarmAdaptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmAdaptor.swift; sourceTree = "<group>"; };
+		A35A91B51E42360C00CACD77 /* AlarmService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmService.swift; sourceTree = "<group>"; };
 		A3E0E4BA1E167AB6000DC94F /* AlarmFireBaseGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmFireBaseGateway.swift; sourceTree = "<group>"; };
 		A56D44C18A825CDA1CB0172D /* Pods_share_alarmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_share_alarmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8A686EB3066C3234D186C76 /* Pods-share_alarmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-share_alarmTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-share_alarmTests/Pods-share_alarmTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -191,10 +191,10 @@
 		8FBA881E1DFD26BE00A2FC61 /* share_alarm */ = {
 			isa = PBXGroup;
 			children = (
+				A35A91B41E4235F700CACD77 /* services */,
 				A33DFEDF1E3BACCD00BC17EF /* InviteInput */,
 				A334CC5B1E16CB1C006A7645 /* GoogleService-Info.plist */,
 				A3E0E4B91E167A98000DC94F /* Gateways */,
-				A3E0E4B61E167A50000DC94F /* Adaptors */,
 				A31470691E067E1400AEE46B /* alarmList */,
 				A31470551E0672A300AEE46B /* musicSelector */,
 				8FBA88501DFD2F4400A2FC61 /* Model */,
@@ -293,12 +293,12 @@
 			name = InviteInput;
 			sourceTree = "<group>";
 		};
-		A3E0E4B61E167A50000DC94F /* Adaptors */ = {
+		A35A91B41E4235F700CACD77 /* services */ = {
 			isa = PBXGroup;
 			children = (
-				A3E0E4B71E167A67000DC94F /* AlarmAdaptor.swift */,
+				A35A91B51E42360C00CACD77 /* AlarmService.swift */,
 			);
-			name = Adaptors;
+			name = services;
 			sourceTree = "<group>";
 		};
 		A3E0E4B91E167A98000DC94F /* Gateways */ = {
@@ -590,9 +590,9 @@
 				A31470611E06746700AEE46B /* TrackListCell.swift in Sources */,
 				A314705B1E06736D00AEE46B /* MusicSelectorViewController.swift in Sources */,
 				A334CC501E16B2DD006A7645 /* Alarm.swift in Sources */,
+				A35A91B61E42360C00CACD77 /* AlarmService.swift in Sources */,
 				A33DFEEA1E3BB1C800BC17EF /* InviteConfirmViewController.swift in Sources */,
 				A314705F1E06742500AEE46B /* UIViewController.swift in Sources */,
-				A3E0E4B81E167A67000DC94F /* AlarmAdaptor.swift in Sources */,
 				A3E0E4BB1E167AB6000DC94F /* AlarmFireBaseGateway.swift in Sources */,
 				A31470571E0672F200AEE46B /* itunesAPI.swift in Sources */,
 				A314705D1E0673BA00AEE46B /* TrackList.swift in Sources */,

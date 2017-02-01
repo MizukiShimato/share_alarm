@@ -20,8 +20,7 @@ class InviteConfirmViewControlelr: UIViewController {
     
     @IBAction func submitButton(_ sender: Any) {
         if let alarm = alarm {
-            (AlartFilebase()).updateUserStatus(userId: "mizuki", alarm: alarm, user: JoinedUser(id: "mizuki", name: "mizuki", status: JoinedUserStatus.Joined))
-            
+            AlarmService.instance().registration(alarm)
             _ = self.navigationController?.popToRootViewController(animated: true)
         }
 

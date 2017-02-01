@@ -10,6 +10,7 @@ import Foundation
 
 class Alarm {
     var time: Date?
+    var userId: String?
     var duration: Int?
     var title: String?
     var musicURL: String?
@@ -30,6 +31,11 @@ class Alarm {
     
     func set(id: String) -> Alarm {
         self.id = id
+        return self
+    }
+    
+    func setUserId(id: String) -> Alarm {
+        self.userId = id
         return self
     }
     
@@ -57,7 +63,7 @@ class Alarm {
             users[user.id] = user.toHash()
         }
         
-        return ["title": self.title!, "id": key!, "duration": self.duration!, "musicURL": self.musicURL!, "vibration": vibration ?? 0 , "joinedUsers": users, "time": self.time!.timeIntervalSince1970]
+        return ["title": self.title!, "id": key!, "duration": self.duration!, "musicURL": self.musicURL!, "vibration": vibration ?? 0 , "joinedUsers": users, "time": self.time!.timeIntervalSince1970, "userId": self.userId!]
     }
 }
 

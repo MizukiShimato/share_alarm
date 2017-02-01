@@ -26,8 +26,8 @@ class AlartFilebase {
             return nil
         }
         let key = alarmDbref.childByAutoId().key
-        alarmDbref.child(userId).child(key).setValue(alarm.set(id: key).toHash())
-        userDbref.child(userId).child(userAlarmKey).child(key).setValue(alarm.set(id: key).toHash())
+        alarmDbref.child(userId).child(key).setValue(alarm.set(id: key).setUserId(id: userId).toHash())
+        userDbref.child(userId).child(userAlarmKey).child(key).setValue(alarm.set(id: key).setUserId(id: userId).toHash())
         return key
     }
     
@@ -76,7 +76,7 @@ class AlartFilebase {
     
     static func toModel(_ dict: Dictionary<String, AnyObject>) -> Alarm? {
         if
-//            let name = dic["name"],
+            let userId = dict["userId"],
             let id = dict["id"],
             let duration = dict["duration"],
             let vibration = dict["vibration"],
@@ -88,6 +88,7 @@ class AlartFilebase {
             alarm.id = id as? String
             alarm.title = title as? String
             alarm.musicURL = musicURL as? String
+            alarm.userId = userId as? String
 
             alarm.duration = Int(duration.stringValue)
             
