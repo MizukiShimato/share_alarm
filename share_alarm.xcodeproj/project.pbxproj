@@ -42,6 +42,7 @@
 		A33DFEE61E3BAE5100BC17EF /* InviteInput.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A33DFEE51E3BAE5100BC17EF /* InviteInput.storyboard */; };
 		A33DFEE81E3BB19000BC17EF /* InviteCodeInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33DFEE71E3BB19000BC17EF /* InviteCodeInputViewController.swift */; };
 		A33DFEEA1E3BB1C800BC17EF /* InviteConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33DFEE91E3BB1C800BC17EF /* InviteConfirmViewController.swift */; };
+		A35A91B31E42307300CACD77 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A91B21E42307300CACD77 /* User.swift */; };
 		A3E0E4B81E167A67000DC94F /* AlarmAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E0E4B71E167A67000DC94F /* AlarmAdaptor.swift */; };
 		A3E0E4BB1E167AB6000DC94F /* AlarmFireBaseGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E0E4BA1E167AB6000DC94F /* AlarmFireBaseGateway.swift */; };
 /* End PBXBuildFile section */
@@ -104,6 +105,7 @@
 		A33DFEE51E3BAE5100BC17EF /* InviteInput.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InviteInput.storyboard; sourceTree = "<group>"; };
 		A33DFEE71E3BB19000BC17EF /* InviteCodeInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteCodeInputViewController.swift; sourceTree = "<group>"; };
 		A33DFEE91E3BB1C800BC17EF /* InviteConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteConfirmViewController.swift; sourceTree = "<group>"; };
+		A35A91B21E42307300CACD77 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A3E0E4B71E167A67000DC94F /* AlarmAdaptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmAdaptor.swift; sourceTree = "<group>"; };
 		A3E0E4BA1E167AB6000DC94F /* AlarmFireBaseGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmFireBaseGateway.swift; sourceTree = "<group>"; };
 		A56D44C18A825CDA1CB0172D /* Pods_share_alarmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_share_alarmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -206,6 +208,7 @@
 				8FBA882B1DFD26BE00A2FC61 /* Info.plist */,
 				A314705E1E06742500AEE46B /* UIViewController.swift */,
 				A31470621E0674AB00AEE46B /* imageFetcher.swift */,
+				A35A91B21E42307300CACD77 /* User.swift */,
 			);
 			path = share_alarm;
 			sourceTree = "<group>";
@@ -603,6 +606,7 @@
 				A31470591E06731900AEE46B /* Track.swift in Sources */,
 				A31470721E06804800AEE46B /* AlarmList.swift in Sources */,
 				A31470631E0674AB00AEE46B /* imageFetcher.swift in Sources */,
+				A35A91B31E42307300CACD77 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

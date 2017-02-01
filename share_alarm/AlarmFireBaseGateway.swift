@@ -37,6 +37,9 @@ class AlartFilebase {
     
     func get(id: String, userId: String, cb: @escaping (Alarm?) -> Void) {
         userDbref.child(userId).child(userAlarmKey).child(id).observeSingleEvent(of: .value, with: { (db) in
+            if (db.value is NSNull) {
+                return cb(nil)
+            }
             let alarm = AlartFilebase.toModel(db.value as! Dictionary<String, AnyObject>)
             cb(alarm)
         })
