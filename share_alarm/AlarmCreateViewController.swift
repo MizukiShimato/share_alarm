@@ -62,17 +62,17 @@ class AlarmCreateViewController: UIViewController {
     }
     
     func sendAlarm(_ alarm : Alarm) {
-        let instance = AlartFilebase()
+        let instance = AlartFilebase()   
         _ = instance.store(alarm, userId: "mizuki")
-        //前の画面に戻る処理を書く
     }
     
     @IBAction func saveButton(_ sender: UIButton) {
         self.sendAlarm(alarm)
         print("come")
+        //前の画面に戻る処理を書く
         //selfについてググる
     }
-    
+
     
 }
 

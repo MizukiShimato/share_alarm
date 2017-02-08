@@ -34,15 +34,29 @@ class AlertListViewController: UIViewController, UITableViewDelegate, UITableVie
         return alarms.count
     }
     
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
         let alarm = alarms[indexPath.row]
         cell.textLabel?.text = alarm.title
-        cell.detailTextLabel?.text = "\([indexPath.row])個目のアラームです \(alarm.musicURL)"
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = NSLocale(localeIdentifier: "ja_JP") as Locale!
+        dateFormatter.dateFormat = "yyyy/MM/dd HH:mm:ss"
+        if let time = alarm.time {
+            cell.detailTextLabel?.text = dateFormatter.string(from: time)
+        }
         return cell
     }
     
-    
+    //if let text2 = sender.text {
+    //if let title = String(text2){
+     //   alarm.title = title
+    //"\(alarm.time)"
+    //"\(alarm.time)")
+    //"\([indexPath.row])個目のアラームです \(alarm.musicURL)"
+    //"\([indexPath.row])個目のアラームです"
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
