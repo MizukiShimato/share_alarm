@@ -44,6 +44,7 @@
 		A33DFEEA1E3BB1C800BC17EF /* InviteConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33DFEE91E3BB1C800BC17EF /* InviteConfirmViewController.swift */; };
 		A35A91B31E42307300CACD77 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A91B21E42307300CACD77 /* User.swift */; };
 		A35A91B61E42360C00CACD77 /* AlarmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A91B51E42360C00CACD77 /* AlarmService.swift */; };
+		A3AD02181E529CC500BD4A32 /* SubscribeAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AD02171E529CC500BD4A32 /* SubscribeAlarmViewController.swift */; };
 		A3E0E4BB1E167AB6000DC94F /* AlarmFireBaseGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E0E4BA1E167AB6000DC94F /* AlarmFireBaseGateway.swift */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +108,7 @@
 		A33DFEE91E3BB1C800BC17EF /* InviteConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteConfirmViewController.swift; sourceTree = "<group>"; };
 		A35A91B21E42307300CACD77 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A35A91B51E42360C00CACD77 /* AlarmService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmService.swift; sourceTree = "<group>"; };
+		A3AD02171E529CC500BD4A32 /* SubscribeAlarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeAlarmViewController.swift; sourceTree = "<group>"; };
 		A3E0E4BA1E167AB6000DC94F /* AlarmFireBaseGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmFireBaseGateway.swift; sourceTree = "<group>"; };
 		A56D44C18A825CDA1CB0172D /* Pods_share_alarmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_share_alarmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8A686EB3066C3234D186C76 /* Pods-share_alarmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-share_alarmTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-share_alarmTests/Pods-share_alarmTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 		8FBA881E1DFD26BE00A2FC61 /* share_alarm */ = {
 			isa = PBXGroup;
 			children = (
+				A3AD02161E529CAD00BD4A32 /* subscribeAlarm */,
 				A35A91B41E4235F700CACD77 /* services */,
 				A33DFEDF1E3BACCD00BC17EF /* InviteInput */,
 				A334CC5B1E16CB1C006A7645 /* GoogleService-Info.plist */,
@@ -299,6 +302,14 @@
 				A35A91B51E42360C00CACD77 /* AlarmService.swift */,
 			);
 			name = services;
+			sourceTree = "<group>";
+		};
+		A3AD02161E529CAD00BD4A32 /* subscribeAlarm */ = {
+			isa = PBXGroup;
+			children = (
+				A3AD02171E529CC500BD4A32 /* SubscribeAlarmViewController.swift */,
+			);
+			name = subscribeAlarm;
 			sourceTree = "<group>";
 		};
 		A3E0E4B91E167A98000DC94F /* Gateways */ = {
@@ -599,6 +610,7 @@
 				8FBA884E1DFD2C3500A2FC61 /* AlarmCreateViewController.swift in Sources */,
 				A33DFEDE1E3BA9E300BC17EF /* InviteInputViewController.swift in Sources */,
 				A33DFEE81E3BB19000BC17EF /* InviteCodeInputViewController.swift in Sources */,
+				A3AD02181E529CC500BD4A32 /* SubscribeAlarmViewController.swift in Sources */,
 				8FBA88201DFD26BE00A2FC61 /* AppDelegate.swift in Sources */,
 				A314706B1E067E4C00AEE46B /* AlarmListViewControlelr.swift in Sources */,
 				8F0899461E3B68BF00D75CE0 /* AlertListViewController.swift in Sources */,
