@@ -18,9 +18,9 @@ class AlertListViewController: UIViewController, UITableViewDelegate, UITableVie
         tableView.dataSource = self
         tableView.delegate = self
         
-        let instance = AlartFilebase()
+        let instance = AlarmService.instance()
         
-        instance.get(userId: "mizuki") { fetchedAlarms in
+        instance.getMyList { fetchedAlarms in
             self.alarms = fetchedAlarms;
             self.tableView.reloadData()
         }

@@ -15,10 +15,15 @@ import FirebaseAuth
 class Me {
     let name: String?
     let id: String?
+    private static var me: Me?
     static func instance() -> Me {
        // FIRAuth.auth()?.currentUser.
         //let email = FIRAuth.auth()?.currentUser?.email
-        return Me(name: "mizuki", id: "mizuki")
+        return Me.me!
+    }
+    
+    static func set(id: String, name: String) {
+        Me.me = Me(name: name, id: id)
     }
     
     private init(name: String?, id: String?) {

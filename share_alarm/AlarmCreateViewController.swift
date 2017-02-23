@@ -62,8 +62,8 @@ class AlarmCreateViewController: UIViewController {
     }
     
     func sendAlarm(_ alarm : Alarm) {
-        let instance = AlartFilebase()   
-        _ = instance.store(alarm, userId: "mizuki")
+        let instance = AlarmService.instance()
+        _ = instance.store(alarm)
     }
     
     @IBAction func saveButton(_ sender: UIButton) {

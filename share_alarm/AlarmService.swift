@@ -47,6 +47,12 @@ class AlarmService {
         }
     }
     
+    func getMyList(cb: @escaping ([Alarm]) -> Void) {
+        getMe {
+            me in gateway.get(userId: me.id, cb: cb)
+        }
+    }
+    
     func registration(_ alarm: Alarm) {
         getMe { me in
             gateway.updateUserStatus(userId: alarm.userId!, alarm: alarm, user: JoinedUser(id: me.id, name: me.name, status: JoinedUserStatus.Joined))
