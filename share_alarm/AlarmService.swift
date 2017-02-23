@@ -29,9 +29,12 @@ class AlarmService {
         self.gateway = AlartFilebase()
     }
     
-    func store(_ alarm: Alarm) {
+    func store(_ alarm: Alarm, cb: (String) -> Void) {
         getMe { me in
-            _ = gateway.store(alarm, userId: me.id)
+            let id = gateway.store(alarm, userId: me.id)
+            if let id = id {
+                cb(id)
+            }
         }
     }
     

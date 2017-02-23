@@ -17,15 +17,18 @@ class InviteCodeInputViewController: UIViewController {
     }
     @IBAction func sendCodeButton(_ sender: Any) {
         if let text = inputCodeForm.text {
-            _ = text.components(separatedBy: "@")
-            let userId = "mizuki"//splitedText[0]
-            let alarmId = "-KbuU58Wz5h56WBJer_9"//splitedText[1]
+            let splitedText = text.components(separatedBy: "@")
+            let userId = splitedText[0]
+            let alarmId = splitedText[1]
             AlarmService.instance().getOne(id: alarmId, userId: userId) { alarm in
-                dump(alarm)
-                let storyboard: UIStoryboard = self.storyboard!
-                let nextView = storyboard.instantiateViewController(withIdentifier: "InviteConfirm") as! InviteConfirmViewControlelr
-                nextView.alarm = alarm
-                self.navigationController?.pushViewController(nextView, animated: true)
+                if alarm == nil {
+                }
+                else {
+                    let storyboard: UIStoryboard = self.storyboard!
+                    let nextView = storyboard.instantiateViewController(withIdentifier: "InviteConfirm") as! InviteConfirmViewControlelr
+                    nextView.alarm = alarm
+                    self.navigationController?.pushViewController(nextView, animated: true)
+                }
             }
         }
     }

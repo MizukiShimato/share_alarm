@@ -31,6 +31,15 @@ class TopViewController: UIViewController {
             }
         }
     }
+    @IBAction func tapInvitePageJump(_ sender: Any) {
+        jumpInvitePage()
+    }
+    
+    func jumpInvitePage() {
+        let storyBoard = UIStoryboard(name: "InviteInput", bundle: nil)
+        let page = storyBoard.instantiateViewController(withIdentifier: "FirstPage") as! InviteCodeInputViewController
+        self.navigationController?.pushViewController(page, animated: true)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

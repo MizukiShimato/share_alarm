@@ -25,8 +25,7 @@ class AlartFilebase {
             dump("dbに保存するためのプロパティに埋められていないものがあります")
             return nil
         }
-        dump(alarm)
-        dump(userId)
+
         let key = alarmDbref.childByAutoId().key
         alarmDbref.child(userId).child(key).setValue(alarm.set(id: key).setUserId(id: userId).toHash())
         userDbref.child(userId).child(userAlarmKey).child(key).setValue(alarm.set(id: key).setUserId(id: userId).toHash())

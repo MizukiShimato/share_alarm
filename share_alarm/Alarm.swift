@@ -91,5 +91,8 @@ class JoinedUser {
 }
 
 func initialAlarm() ->Alarm {
-    return Alarm()
+    let alarm = Alarm()
+    alarm.time = Date()
+    alarm.vibration = true
+    return alarm
 }
