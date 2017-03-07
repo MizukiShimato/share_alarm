@@ -24,8 +24,6 @@ class AlertListViewController: UIViewController, UITableViewDelegate, UITableVie
             self.alarms = fetchedAlarms;
             self.tableView.reloadData()
         }
-
-            alarms.append(initialAlarm())
     }
         // Do any additional setup after loading the view.
 
@@ -34,10 +32,18 @@ class AlertListViewController: UIViewController, UITableViewDelegate, UITableVie
         return alarms.count
     }
     
+     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let alarm = alarms[indexPath.row]
+        let storyBoard = UIStoryboard(name: "AlarmDetail", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "AlarmDetail") as! AlarmDetailViewControlle
+        vc.alarm = alarm
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
         let alarm = alarms[indexPath.row]
+        
         cell.textLabel?.text = alarm.title
         
         let dateFormatter = DateFormatter()
@@ -46,16 +52,9 @@ class AlertListViewController: UIViewController, UITableViewDelegate, UITableVie
         if let time = alarm.time {
             cell.detailTextLabel?.text = dateFormatter.string(from: time)
         }
+        cell.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
         return cell
     }
-    
-    //if let text2 = sender.text {
-    //if let title = String(text2){
-     //   alarm.title = title
-    //"\(alarm.time)"
-    //"\(alarm.time)")
-    //"\([indexPath.row])個目のアラームです \(alarm.musicURL)"
-    //"\([indexPath.row])個目のアラームです"
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

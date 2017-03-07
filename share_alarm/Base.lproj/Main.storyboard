@@ -206,29 +206,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dbi-nk-rEu">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="sectionIndexBackgroundColor" red="0.81745857002567712" green="0.81593656350281818" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="fp6-sk-YlN">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fp6-sk-YlN" id="flr-f4-6Gn">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <sections/>
-                                <connections>
-                                    <outlet property="dataSource" destination="s5w-xj-iET" id="FQm-ZC-Vta"/>
-                                    <outlet property="delegate" destination="s5w-xj-iET" id="2Gg-aC-ohD"/>
-                                </connections>
-                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cTJ-86-m27">
+                                <rect key="frame" x="0.0" y="64" width="320" height="440"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dbi-nk-rEu">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="440"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="sectionIndexBackgroundColor" red="0.81745857002567712" green="0.81593656350281818" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" id="fp6-sk-YlN">
+                                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fp6-sk-YlN" id="flr-f4-6Gn">
+                                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <sections/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="s5w-xj-iET" id="FQm-ZC-Vta"/>
+                                            <outlet property="delegate" destination="s5w-xj-iET" id="2Gg-aC-ohD"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cTJ-86-m27" firstAttribute="centerX" secondItem="UBg-M6-Gdg" secondAttribute="centerX" id="H2Y-8N-SW3"/>
+                            <constraint firstItem="cTJ-86-m27" firstAttribute="leading" secondItem="UBg-M6-Gdg" secondAttribute="leading" id="VmA-se-d1B"/>
+                            <constraint firstItem="cTJ-86-m27" firstAttribute="top" secondItem="wJz-bi-QNT" secondAttribute="bottom" id="Vtz-Fl-iIJ"/>
+                            <constraint firstItem="cTJ-86-m27" firstAttribute="centerY" secondItem="UBg-M6-Gdg" secondAttribute="centerY" id="fjh-8F-J93"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="dbi-nk-rEu" id="KD7-HL-QLV"/>

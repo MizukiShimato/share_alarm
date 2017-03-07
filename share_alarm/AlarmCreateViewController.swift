@@ -72,10 +72,10 @@ class AlarmCreateViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func sendAlarm(_ alarm : Alarm) {
+    func sendAlarm(_ alarm : Alarm, cb: @escaping (String) -> Void) {
         let instance = AlarmService.instance()
         instance.store(alarm) { id in
-            print("\(id)@\(Me.instance().id!)")
+            cb("\(id)@\(Me.instance().id!)")
         }
     }
     
@@ -89,14 +89,15 @@ class AlarmCreateViewController: UIViewController {
     }
     
     @IBAction func saveButton(_ sender: UIButton) {
-        self.sendAlarm(alarm)
-        self.share()
+        self.sendAlarm(alarm) { alarmIdToken in
+            self.share(alarmTokenId: alarmIdToken)
+        }
         //前の画面に戻る処理を書く
         //selfについてググる
     }
     
-    func share() {
-        let activityVC = UIActivityViewController(activityItems: ["share"], applicationActivities: nil)
+    func share(alarmTokenId: String) {
+        let activityVC = UIActivityViewController(activityItems: [alarmTokenId], applicationActivities: nil)
         
         self.present(activityVC, animated: true, completion: nil)
     }

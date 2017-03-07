@@ -32,6 +32,8 @@ class AlarmService {
     func store(_ alarm: Alarm, cb: (String) -> Void) {
         getMe { me in
             let id = gateway.store(alarm, userId: me.id)
+            alarm.id = id
+            gateway.updateUserStatus(userId: me.id, alarm: alarm, user: JoinedUser(id: me.id, name: me.name, status: JoinedUserStatus.Joined))
             if let id = id {
                 cb(id)
             }

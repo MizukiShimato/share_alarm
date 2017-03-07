@@ -25,7 +25,7 @@ class LoginViewController: UIViewController {
             let name = emailForm.text,
             let password = passwordForm.text {
                 username = name
-                let email = "\(name)@example.xyz"
+                let email = "\(name)@example.com"
                 
                 storage.set(name, forKey: "user_name")
                 storage.set(password, forKey: "password")
