@@ -13,6 +13,8 @@ class AlarmCreateViewController: UIViewController {
     
     var alarm: Alarm = initialAlarm()
     
+    @IBOutlet weak var datePicker: UIDatePicker!
+    @IBOutlet weak var vibrationLabel: UILabel!
     @IBOutlet weak var musicTitleLabel: UILabel!
     @IBOutlet weak var submitButton: UIButton!
     
@@ -26,15 +28,9 @@ class AlarmCreateViewController: UIViewController {
         }
        self.present(selector, animated: true, completion: nil)
     }
-    
-    @IBAction func input(_ sender: UITextField) {
-        if let text = sender.text {
-            if let duration = Int(text){
-                alarm.duration = duration
-                validateAlarm()
-            }
-        }
-        dump(alarm)
+
+    @IBAction func onChangeDurationSlider(_ sender: UISlider) {
+        self.alarm.duration = Int(Double(sender.value) * 100.0 * 50.0)
     }
     
     @IBAction func titleBox(_ sender: UITextField) {
@@ -49,6 +45,11 @@ class AlarmCreateViewController: UIViewController {
     
     @IBAction func vibratonSwitch(_ sender: UISwitch) {
         alarm.vibration = sender.isOn
+        if sender.isOn {
+            vibrationLabel.text = "オン"
+        } else {
+            vibrationLabel.text = "オフ"
+        }
         validateAlarm()
         dump(alarm)
     }
@@ -62,7 +63,9 @@ class AlarmCreateViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        datePicker.minimumDate = Date()
         submitButton.isEnabled = false
+        alarm.musicURL = ""
         alarm.userId = Me.instance().id
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -92,8 +95,7 @@ class AlarmCreateViewController: UIViewController {
         self.sendAlarm(alarm) { alarmIdToken in
             self.share(alarmTokenId: alarmIdToken)
         }
-        //前の画面に戻る処理を書く
-        //selfについてググる
+        _ = self.navigationController?.popToRootViewController(animated: true)
     }
     
     func share(alarmTokenId: String) {

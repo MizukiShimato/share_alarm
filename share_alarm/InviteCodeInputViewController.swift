@@ -18,6 +18,9 @@ class InviteCodeInputViewController: UIViewController {
     @IBAction func sendCodeButton(_ sender: Any) {
         if let text = inputCodeForm.text {
             let splitedText = text.components(separatedBy: "@")
+            if splitedText.count < 2 {
+                return;
+            }
             let userId = splitedText[1]
             let alarmId = splitedText[0]
             AlarmService.instance().getOne(id: alarmId, userId: userId) { alarm in

@@ -39,6 +39,8 @@
 		A33DFEEA1E3BB1C800BC17EF /* InviteConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33DFEE91E3BB1C800BC17EF /* InviteConfirmViewController.swift */; };
 		A35A91B31E42307300CACD77 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A91B21E42307300CACD77 /* User.swift */; };
 		A35A91B61E42360C00CACD77 /* AlarmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A91B51E42360C00CACD77 /* AlarmService.swift */; };
+		A37B70491E7314FB00337BDE /* InputTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A37B70481E7314FB00337BDE /* InputTitleView.xib */; };
+		A37B704B1E73158E00337BDE /* InputTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37B704A1E73158E00337BDE /* InputTitle.swift */; };
 		A385F4291E6F070A0036AC74 /* AlarmDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A385F4281E6F070A0036AC74 /* AlarmDetail.storyboard */; };
 		A385F42B1E6F07520036AC74 /* AlarmDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A385F42A1E6F07520036AC74 /* AlarmDetailViewController.swift */; };
 		A3AD02181E529CC500BD4A32 /* SubscribeAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AD02171E529CC500BD4A32 /* SubscribeAlarmViewController.swift */; };
@@ -103,6 +105,8 @@
 		A33DFEE91E3BB1C800BC17EF /* InviteConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteConfirmViewController.swift; sourceTree = "<group>"; };
 		A35A91B21E42307300CACD77 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A35A91B51E42360C00CACD77 /* AlarmService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmService.swift; sourceTree = "<group>"; };
+		A37B70481E7314FB00337BDE /* InputTitleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputTitleView.xib; sourceTree = "<group>"; };
+		A37B704A1E73158E00337BDE /* InputTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputTitle.swift; sourceTree = "<group>"; };
 		A385F4281E6F070A0036AC74 /* AlarmDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AlarmDetail.storyboard; sourceTree = "<group>"; };
 		A385F42A1E6F07520036AC74 /* AlarmDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmDetailViewController.swift; sourceTree = "<group>"; };
 		A3AD02171E529CC500BD4A32 /* SubscribeAlarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeAlarmViewController.swift; sourceTree = "<group>"; };
@@ -193,6 +197,7 @@
 		8FBA881E1DFD26BE00A2FC61 /* share_alarm */ = {
 			isa = PBXGroup;
 			children = (
+				A37B70471E7314E400337BDE /* alarmCreateView */,
 				A385F4271E6F06EC0036AC74 /* alarmDetail */,
 				A3EA1B461E5F3AD300A9FD32 /* Login */,
 				A3AD02161E529CAD00BD4A32 /* subscribeAlarm */,
@@ -283,6 +288,15 @@
 				A35A91B51E42360C00CACD77 /* AlarmService.swift */,
 			);
 			name = services;
+			sourceTree = "<group>";
+		};
+		A37B70471E7314E400337BDE /* alarmCreateView */ = {
+			isa = PBXGroup;
+			children = (
+				A37B70481E7314FB00337BDE /* InputTitleView.xib */,
+				A37B704A1E73158E00337BDE /* InputTitle.swift */,
+			);
+			name = alarmCreateView;
 			sourceTree = "<group>";
 		};
 		A385F4271E6F06EC0036AC74 /* alarmDetail */ = {
@@ -438,6 +452,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A37B70491E7314FB00337BDE /* InputTitleView.xib in Resources */,
 				A31470681E0675CA00AEE46B /* TrackList.xib in Resources */,
 				A334CC5C1E16CB1C006A7645 /* GoogleService-Info.plist in Resources */,
 				A33DFEE61E3BAE5100BC17EF /* InviteInput.storyboard in Resources */,
@@ -601,6 +616,7 @@
 				8FBA88221DFD26BE00A2FC61 /* TopViewController.swift in Sources */,
 				A31470611E06746700AEE46B /* TrackListCell.swift in Sources */,
 				A314705B1E06736D00AEE46B /* MusicSelectorViewController.swift in Sources */,
+				A37B704B1E73158E00337BDE /* InputTitle.swift in Sources */,
 				A3EA1B451E5F3A5500A9FD32 /* LoginViewController.swift in Sources */,
 				A334CC501E16B2DD006A7645 /* Alarm.swift in Sources */,
 				A35A91B61E42360C00CACD77 /* AlarmService.swift in Sources */,
