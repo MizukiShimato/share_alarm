@@ -35,12 +35,13 @@ class AlarmCreateViewController: UIViewController {
     
     @IBAction func titleBox(_ sender: UITextField) {
         if let text2 = sender.text {
-            if let title = String(text2){
-                alarm.title = title
+            onChangeTitle(title: text2)
                 validateAlarm()
-            }
-            dump(alarm)
         }
+    }
+    
+    func onChangeTitle(title: String) {
+        alarm.title = title
     }
     
     @IBAction func vibratonSwitch(_ sender: UISwitch) {
@@ -63,6 +64,7 @@ class AlarmCreateViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+                
         datePicker.minimumDate = Date()
         submitButton.isEnabled = false
         alarm.musicURL = ""
@@ -103,7 +105,7 @@ class AlarmCreateViewController: UIViewController {
         
         self.present(activityVC, animated: true, completion: nil)
     }
-
     
+
 }
 

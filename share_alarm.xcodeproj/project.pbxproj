@@ -39,8 +39,14 @@
 		A33DFEEA1E3BB1C800BC17EF /* InviteConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33DFEE91E3BB1C800BC17EF /* InviteConfirmViewController.swift */; };
 		A35A91B31E42307300CACD77 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A91B21E42307300CACD77 /* User.swift */; };
 		A35A91B61E42360C00CACD77 /* AlarmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A91B51E42360C00CACD77 /* AlarmService.swift */; };
-		A37B70491E7314FB00337BDE /* InputTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A37B70481E7314FB00337BDE /* InputTitleView.xib */; };
-		A37B704B1E73158E00337BDE /* InputTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37B704A1E73158E00337BDE /* InputTitle.swift */; };
+		A37B704D1E731F4C00337BDE /* AlarmCreate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A37B704C1E731F4C00337BDE /* AlarmCreate.storyboard */; };
+		A37B704F1E7323C000337BDE /* AlarmTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37B704E1E7323C000337BDE /* AlarmTitleViewController.swift */; };
+		A37B70511E7323E600337BDE /* AlarmDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37B70501E7323E600337BDE /* AlarmDateViewController.swift */; };
+		A37B70531E7323FB00337BDE /* AlarmVibMusicVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37B70521E7323FB00337BDE /* AlarmVibMusicVIewController.swift */; };
+		A37B70551E73242C00337BDE /* AlarmConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37B70541E73242C00337BDE /* AlarmConfirmViewController.swift */; };
+		A37B70571E73274100337BDE /* AlarmCreateShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37B70561E73274100337BDE /* AlarmCreateShare.swift */; };
+		A37B70591E75511100337BDE /* JoinedUserCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A37B70581E75511100337BDE /* JoinedUserCellView.xib */; };
+		A37B705B1E75516000337BDE /* JoinedUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37B705A1E75516000337BDE /* JoinedUserCell.swift */; };
 		A385F4291E6F070A0036AC74 /* AlarmDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A385F4281E6F070A0036AC74 /* AlarmDetail.storyboard */; };
 		A385F42B1E6F07520036AC74 /* AlarmDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A385F42A1E6F07520036AC74 /* AlarmDetailViewController.swift */; };
 		A3AD02181E529CC500BD4A32 /* SubscribeAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AD02171E529CC500BD4A32 /* SubscribeAlarmViewController.swift */; };
@@ -105,8 +111,14 @@
 		A33DFEE91E3BB1C800BC17EF /* InviteConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteConfirmViewController.swift; sourceTree = "<group>"; };
 		A35A91B21E42307300CACD77 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A35A91B51E42360C00CACD77 /* AlarmService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmService.swift; sourceTree = "<group>"; };
-		A37B70481E7314FB00337BDE /* InputTitleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputTitleView.xib; sourceTree = "<group>"; };
-		A37B704A1E73158E00337BDE /* InputTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputTitle.swift; sourceTree = "<group>"; };
+		A37B704C1E731F4C00337BDE /* AlarmCreate.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AlarmCreate.storyboard; sourceTree = "<group>"; };
+		A37B704E1E7323C000337BDE /* AlarmTitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmTitleViewController.swift; sourceTree = "<group>"; };
+		A37B70501E7323E600337BDE /* AlarmDateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmDateViewController.swift; sourceTree = "<group>"; };
+		A37B70521E7323FB00337BDE /* AlarmVibMusicVIewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmVibMusicVIewController.swift; sourceTree = "<group>"; };
+		A37B70541E73242C00337BDE /* AlarmConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmConfirmViewController.swift; sourceTree = "<group>"; };
+		A37B70561E73274100337BDE /* AlarmCreateShare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmCreateShare.swift; sourceTree = "<group>"; };
+		A37B70581E75511100337BDE /* JoinedUserCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JoinedUserCellView.xib; sourceTree = "<group>"; };
+		A37B705A1E75516000337BDE /* JoinedUserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinedUserCell.swift; sourceTree = "<group>"; };
 		A385F4281E6F070A0036AC74 /* AlarmDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AlarmDetail.storyboard; sourceTree = "<group>"; };
 		A385F42A1E6F07520036AC74 /* AlarmDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmDetailViewController.swift; sourceTree = "<group>"; };
 		A3AD02171E529CC500BD4A32 /* SubscribeAlarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeAlarmViewController.swift; sourceTree = "<group>"; };
@@ -293,8 +305,12 @@
 		A37B70471E7314E400337BDE /* alarmCreateView */ = {
 			isa = PBXGroup;
 			children = (
-				A37B70481E7314FB00337BDE /* InputTitleView.xib */,
-				A37B704A1E73158E00337BDE /* InputTitle.swift */,
+				A37B704C1E731F4C00337BDE /* AlarmCreate.storyboard */,
+				A37B704E1E7323C000337BDE /* AlarmTitleViewController.swift */,
+				A37B70501E7323E600337BDE /* AlarmDateViewController.swift */,
+				A37B70521E7323FB00337BDE /* AlarmVibMusicVIewController.swift */,
+				A37B70541E73242C00337BDE /* AlarmConfirmViewController.swift */,
+				A37B70561E73274100337BDE /* AlarmCreateShare.swift */,
 			);
 			name = alarmCreateView;
 			sourceTree = "<group>";
@@ -313,6 +329,8 @@
 			children = (
 				A3AD02171E529CC500BD4A32 /* SubscribeAlarmViewController.swift */,
 				A3EA1B491E687AC400A9FD32 /* SubscribeAlarm.storyboard */,
+				A37B70581E75511100337BDE /* JoinedUserCellView.xib */,
+				A37B705A1E75516000337BDE /* JoinedUserCell.swift */,
 			);
 			name = subscribeAlarm;
 			sourceTree = "<group>";
@@ -452,8 +470,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A37B70491E7314FB00337BDE /* InputTitleView.xib in Resources */,
 				A31470681E0675CA00AEE46B /* TrackList.xib in Resources */,
+				A37B70591E75511100337BDE /* JoinedUserCellView.xib in Resources */,
 				A334CC5C1E16CB1C006A7645 /* GoogleService-Info.plist in Resources */,
 				A33DFEE61E3BAE5100BC17EF /* InviteInput.storyboard in Resources */,
 				8FBA882A1DFD26BE00A2FC61 /* LaunchScreen.storyboard in Resources */,
@@ -463,6 +481,7 @@
 				A3EA1B4A1E687AC400A9FD32 /* SubscribeAlarm.storyboard in Resources */,
 				A31470661E06755800AEE46B /* TrackListCell.xib in Resources */,
 				A31C70FA1E1BF32500B6DB6B /* MusicSelector.storyboard in Resources */,
+				A37B704D1E731F4C00337BDE /* AlarmCreate.storyboard in Resources */,
 				A3EA1B481E5F3BA600A9FD32 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -616,21 +635,26 @@
 				8FBA88221DFD26BE00A2FC61 /* TopViewController.swift in Sources */,
 				A31470611E06746700AEE46B /* TrackListCell.swift in Sources */,
 				A314705B1E06736D00AEE46B /* MusicSelectorViewController.swift in Sources */,
-				A37B704B1E73158E00337BDE /* InputTitle.swift in Sources */,
 				A3EA1B451E5F3A5500A9FD32 /* LoginViewController.swift in Sources */,
 				A334CC501E16B2DD006A7645 /* Alarm.swift in Sources */,
+				A37B70551E73242C00337BDE /* AlarmConfirmViewController.swift in Sources */,
 				A35A91B61E42360C00CACD77 /* AlarmService.swift in Sources */,
 				A33DFEEA1E3BB1C800BC17EF /* InviteConfirmViewController.swift in Sources */,
+				A37B705B1E75516000337BDE /* JoinedUserCell.swift in Sources */,
 				A314705F1E06742500AEE46B /* UIViewController.swift in Sources */,
+				A37B70511E7323E600337BDE /* AlarmDateViewController.swift in Sources */,
 				A3E0E4BB1E167AB6000DC94F /* AlarmFireBaseGateway.swift in Sources */,
 				A31470571E0672F200AEE46B /* itunesAPI.swift in Sources */,
 				A314705D1E0673BA00AEE46B /* TrackList.swift in Sources */,
 				A385F42B1E6F07520036AC74 /* AlarmDetailViewController.swift in Sources */,
 				8FBA884E1DFD2C3500A2FC61 /* AlarmCreateViewController.swift in Sources */,
+				A37B70531E7323FB00337BDE /* AlarmVibMusicVIewController.swift in Sources */,
 				A33DFEDE1E3BA9E300BC17EF /* InviteInputViewController.swift in Sources */,
+				A37B70571E73274100337BDE /* AlarmCreateShare.swift in Sources */,
 				A33DFEE81E3BB19000BC17EF /* InviteCodeInputViewController.swift in Sources */,
 				A3AD02181E529CC500BD4A32 /* SubscribeAlarmViewController.swift in Sources */,
 				8FBA88201DFD26BE00A2FC61 /* AppDelegate.swift in Sources */,
+				A37B704F1E7323C000337BDE /* AlarmTitleViewController.swift in Sources */,
 				8F0899461E3B68BF00D75CE0 /* AlertListViewController.swift in Sources */,
 				A31470591E06731900AEE46B /* Track.swift in Sources */,
 				A31470631E0674AB00AEE46B /* imageFetcher.swift in Sources */,

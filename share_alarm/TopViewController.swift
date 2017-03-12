@@ -35,9 +35,20 @@ class TopViewController: UIViewController {
         jumpInvitePage()
     }
     
+    @IBAction func tapAlarmCreatePageJump(_ sender: Any) {
+        jumpAlarmCreatePage()
+    }
+    
+    
     func jumpInvitePage() {
         let storyBoard = UIStoryboard(name: "InviteInput", bundle: nil)
         let page = storyBoard.instantiateViewController(withIdentifier: "FirstPage") as! InviteCodeInputViewController
+        self.navigationController?.pushViewController(page, animated: true)
+    }
+    
+    func jumpAlarmCreatePage() {
+        let storyBoard = UIStoryboard(name: "AlarmCreate", bundle: nil)
+        let page = storyBoard.instantiateViewController(withIdentifier: "AlarmCreateInputTitle") as! AlarmTitleViewController
         self.navigationController?.pushViewController(page, animated: true)
     }
 

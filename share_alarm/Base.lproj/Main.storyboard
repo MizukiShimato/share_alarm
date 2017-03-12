@@ -27,7 +27,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <state key="normal" title="アラーム作成"/>
                                 <connections>
-                                    <segue destination="XVl-9l-0wz" kind="show" id="7KP-Ty-pSj"/>
+                                    <action selector="tapAlarmCreatePageJump:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aK6-7D-6s2"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="シェアラーム" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3x-ga-gaK">

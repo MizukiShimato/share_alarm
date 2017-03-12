@@ -32,7 +32,7 @@ class AlarmDetailViewControlle : UIViewController {
             alarmName.text = alarm.title
             let dateFormatter = DateFormatter()
             dateFormatter.locale = NSLocale(localeIdentifier: "ja_JP") as Locale!
-            dateFormatter.dateFormat = "yyyy/MM/dd HH:mm:ss"
+            dateFormatter.dateFormat = "MM/dd HH:mm"
             if let time = alarm.time {
                 alarmDate.text = dateFormatter.string(from: time)
             }
