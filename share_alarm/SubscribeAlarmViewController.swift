@@ -16,6 +16,12 @@ class SubscribeAlarmViewController : UIViewController {
     var subscribeToken: UInt?
     var avPlayer: AVPlayer!
     var avLayer: AVPlayerLayer!
+    var userListView: JoinedUserList!
+    
+    @IBOutlet weak var timeLimitLabel: UILabel!
+    
+    
+    @IBOutlet weak var listContainer: UIView!
 
     @IBOutlet weak var wakeupSwitch: UISwitch!
 //    @IBOutlet weak var avContainer: UIView!
@@ -23,8 +29,10 @@ class SubscribeAlarmViewController : UIViewController {
     @IBOutlet weak var avContainer: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        initUserListView(alarm: alarm)
         wakeupSwitch.isEnabled = false
         wakeupSwitch.isOn = false
+        self.initUserListView(alarm: alarm)
         if let alarm = alarm {
             AlarmService.instance().getOne(id: alarm.id!, userId: alarm.userId!) { subAlarm in
                 self.alarm = subAlarm
@@ -35,6 +43,14 @@ class SubscribeAlarmViewController : UIViewController {
                 }
             }
         }
+    }
+    
+    func initUserListView(alarm: Alarm?) {
+        userListView = UINib(nibName: "JoinedUserListView", bundle: nil).instantiate(withOwner: self, options: nil).first as! JoinedUserList
+        if let alarm = alarm {
+            userListView.users = alarm.joiendUsers
+        }
+        addSubvieWithAutoLayout(userListView, parentView: listContainer)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -51,6 +67,8 @@ class SubscribeAlarmViewController : UIViewController {
     
     func subscribeAlarm(alarm: Alarm?) {
         if let alarm = alarm {
+            self.userListView.users = alarm.joiendUsers
+            self.userListView.reloadData()
             updateView(alarm: alarm)
         }
     }
@@ -98,14 +116,17 @@ class SubscribeAlarmViewController : UIViewController {
     
     func updateTimerView(time: Int) {
         // todo: 画面表示時計の描画
-        dump(time)
+        let hour = time / (60 * 60)
+        let minute = (time - (hour * 60 * 60)) / 60
+        let sec = ((time - (hour * 60 * 60)) - (minute * 60))
+        timeLimitLabel.text = "\(hour.description)時間 \(minute.description)分 \(sec.description)秒 後"
     }
     
     func updateView(alarm: Alarm) {
         /**
          * todo: imple
          */
-        dump(alarm.joiendUsers) //参加ユーザの状態変更
+//        dump(alarm.joiendUsers) //参加ユーザの状態変更
     }
     func share(message: String) {
         let activityVC = UIActivityViewController(activityItems: [message], applicationActivities: nil)

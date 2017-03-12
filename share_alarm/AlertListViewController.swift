@@ -21,7 +21,10 @@ class AlertListViewController: UIViewController, UITableViewDelegate, UITableVie
         let instance = AlarmService.instance()
         
         instance.getMyList { fetchedAlarms in
-            self.alarms = fetchedAlarms;
+            let now = Date()
+            self.alarms = fetchedAlarms.filter { alarm in
+                alarm.time! > now
+            };
             self.tableView.reloadData()
         }
     }

@@ -21,6 +21,7 @@ class TopViewController: UIViewController {
     }
     
     func loginCheck() {
+        // TODO: ログインチェック中は他のページに遷移しないようにする
         let storyBoard = UIStoryboard(name: "Login", bundle: nil)
         let selector = storyBoard.instantiateViewController(withIdentifier: "MainPage") as! LoginViewController
         

@@ -47,6 +47,8 @@
 		A37B70571E73274100337BDE /* AlarmCreateShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37B70561E73274100337BDE /* AlarmCreateShare.swift */; };
 		A37B70591E75511100337BDE /* JoinedUserCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A37B70581E75511100337BDE /* JoinedUserCellView.xib */; };
 		A37B705B1E75516000337BDE /* JoinedUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37B705A1E75516000337BDE /* JoinedUserCell.swift */; };
+		A37B705D1E7552AB00337BDE /* JoinedUserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37B705C1E7552AB00337BDE /* JoinedUserList.swift */; };
+		A37B705F1E7552CF00337BDE /* JoinedUserListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A37B705E1E7552CF00337BDE /* JoinedUserListView.xib */; };
 		A385F4291E6F070A0036AC74 /* AlarmDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A385F4281E6F070A0036AC74 /* AlarmDetail.storyboard */; };
 		A385F42B1E6F07520036AC74 /* AlarmDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A385F42A1E6F07520036AC74 /* AlarmDetailViewController.swift */; };
 		A3AD02181E529CC500BD4A32 /* SubscribeAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AD02171E529CC500BD4A32 /* SubscribeAlarmViewController.swift */; };
@@ -119,6 +121,8 @@
 		A37B70561E73274100337BDE /* AlarmCreateShare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmCreateShare.swift; sourceTree = "<group>"; };
 		A37B70581E75511100337BDE /* JoinedUserCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JoinedUserCellView.xib; sourceTree = "<group>"; };
 		A37B705A1E75516000337BDE /* JoinedUserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinedUserCell.swift; sourceTree = "<group>"; };
+		A37B705C1E7552AB00337BDE /* JoinedUserList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinedUserList.swift; sourceTree = "<group>"; };
+		A37B705E1E7552CF00337BDE /* JoinedUserListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JoinedUserListView.xib; sourceTree = "<group>"; };
 		A385F4281E6F070A0036AC74 /* AlarmDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AlarmDetail.storyboard; sourceTree = "<group>"; };
 		A385F42A1E6F07520036AC74 /* AlarmDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmDetailViewController.swift; sourceTree = "<group>"; };
 		A3AD02171E529CC500BD4A32 /* SubscribeAlarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeAlarmViewController.swift; sourceTree = "<group>"; };
@@ -331,6 +335,8 @@
 				A3EA1B491E687AC400A9FD32 /* SubscribeAlarm.storyboard */,
 				A37B70581E75511100337BDE /* JoinedUserCellView.xib */,
 				A37B705A1E75516000337BDE /* JoinedUserCell.swift */,
+				A37B705C1E7552AB00337BDE /* JoinedUserList.swift */,
+				A37B705E1E7552CF00337BDE /* JoinedUserListView.xib */,
 			);
 			name = subscribeAlarm;
 			sourceTree = "<group>";
@@ -476,6 +482,7 @@
 				A33DFEE61E3BAE5100BC17EF /* InviteInput.storyboard in Resources */,
 				8FBA882A1DFD26BE00A2FC61 /* LaunchScreen.storyboard in Resources */,
 				8FBA88271DFD26BE00A2FC61 /* Assets.xcassets in Resources */,
+				A37B705F1E7552CF00337BDE /* JoinedUserListView.xib in Resources */,
 				8FBA88251DFD26BE00A2FC61 /* Main.storyboard in Resources */,
 				A385F4291E6F070A0036AC74 /* AlarmDetail.storyboard in Resources */,
 				A3EA1B4A1E687AC400A9FD32 /* SubscribeAlarm.storyboard in Resources */,
@@ -647,6 +654,7 @@
 				A31470571E0672F200AEE46B /* itunesAPI.swift in Sources */,
 				A314705D1E0673BA00AEE46B /* TrackList.swift in Sources */,
 				A385F42B1E6F07520036AC74 /* AlarmDetailViewController.swift in Sources */,
+				A37B705D1E7552AB00337BDE /* JoinedUserList.swift in Sources */,
 				8FBA884E1DFD2C3500A2FC61 /* AlarmCreateViewController.swift in Sources */,
 				A37B70531E7323FB00337BDE /* AlarmVibMusicVIewController.swift in Sources */,
 				A33DFEDE1E3BA9E300BC17EF /* InviteInputViewController.swift in Sources */,
