@@ -20,8 +20,26 @@ extension UIViewController {
         self.present(activityVC, animated: true, completion: nil)
     }
 
-    func createAlarmTokenId(alarmId: String, userId: String)-> String {
+    func createAlarmTokenId(alarmId: String, userId: String) -> String {
         return "\(alarmId)@\(userId)"
+    }
+    
+    func appearAlarmDialog(message: String, cb: @escaping () -> Void) {
+        // UIAlertController
+        let alertController: UIAlertController = UIAlertController(title: "Alert", message: message, preferredStyle: .alert)
+        
+        // 選択肢
+        // 異なる方法でactionを設定してみた
+        let actionOK = UIAlertAction(title: "OK", style: .default){
+            action in
+            cb()
+        }
+
+        // actionを追加
+        alertController.addAction(actionOK)
+        
+        // UIAlertの起動
+        present(alertController, animated: true, completion: nil)
     }
 
 }

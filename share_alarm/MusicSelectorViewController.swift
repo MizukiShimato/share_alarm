@@ -28,6 +28,12 @@ class MusicSelectorViewController: UIViewController {
     
     
     var trackList: TrackList!
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        if let avPlayer = avPlayer {
+            avPlayer.pause()
+        }
+    }
     override func viewDidLoad() {
         trackList = UINib(nibName: "TrackList", bundle: nil).instantiate(withOwner: self, options: nil).first as? TrackList
         searchBar.delegate = self

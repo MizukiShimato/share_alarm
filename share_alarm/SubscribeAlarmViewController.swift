@@ -24,7 +24,6 @@ class SubscribeAlarmViewController : UIViewController {
     @IBOutlet weak var listContainer: UIView!
 
     @IBOutlet weak var wakeupSwitch: UISwitch!
-//    @IBOutlet weak var avContainer: UIView!
     
     @IBOutlet weak var avContainer: UIView!
     override func viewDidLoad() {
@@ -43,6 +42,9 @@ class SubscribeAlarmViewController : UIViewController {
                 }
             }
         }
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
     }
     
     func initUserListView(alarm: Alarm?) {
@@ -90,7 +92,8 @@ class SubscribeAlarmViewController : UIViewController {
     }
     
     func musicFin(_ notification: NSNotification) {
-        dump("repeat?")
+        self.avPlayer.seek(to: kCMTimeZero)
+        self.avPlayer.play()
         /**
          * todo: imple
         */
@@ -99,6 +102,7 @@ class SubscribeAlarmViewController : UIViewController {
     func wokeup() {
         if let alarm = self.alarm {
             AlarmService.instance().changeStateToWokeup(alarm)
+            avPlayer.pause() // とりあえず起きたら止める
         }
     }
     
@@ -123,9 +127,6 @@ class SubscribeAlarmViewController : UIViewController {
     }
     
     func updateView(alarm: Alarm) {
-        /**
-         * todo: imple
-         */
 //        dump(alarm.joiendUsers) //参加ユーザの状態変更
     }
     func share(message: String) {
@@ -134,4 +135,9 @@ class SubscribeAlarmViewController : UIViewController {
         self.present(activityVC, animated: true, completion: nil)
     }
     
+    @IBAction func onWokeupSwitch(_ sender: UISwitch) {
+        if sender.isOn {
+            wokeup()
+        }
+    }
 }

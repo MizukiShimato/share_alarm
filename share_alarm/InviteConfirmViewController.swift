@@ -20,12 +20,18 @@ class InviteConfirmViewControlelr: UIViewController {
     
     @IBAction func submitButton(_ sender: Any) {
         if let alarm = alarm {
-            AlarmService.instance().registration(alarm)
-            _ = self.navigationController?.popToRootViewController(animated: true)
+            appearAlarmDialog(message: confirmMessage(alarm.title!)) {
+                AlarmService.instance().registration(alarm)
+                _ = self.navigationController?.popToRootViewController(animated: true)
+            }
         }
 
     }
-    
+
+    func confirmMessage(_ text: String) -> String {
+        return "アラーム確認 -> \(text) -> お休みになる で画面を消せずに待っていてね"
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         if let alarm = alarm {
