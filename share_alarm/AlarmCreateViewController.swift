@@ -98,14 +98,7 @@ class AlarmCreateViewController: UIViewController {
             self.share(alarmTokenId: alarmIdToken)
         }
         _ = self.navigationController?.popToRootViewController(animated: true)
-    }
-    
-    func share(alarmTokenId: String) {
-        let activityVC = UIActivityViewController(activityItems: [alarmTokenId], applicationActivities: nil)
-        
-        self.present(activityVC, animated: true, completion: nil)
-    }
-    
+    }    
 
 }
 

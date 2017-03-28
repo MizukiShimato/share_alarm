@@ -13,4 +13,15 @@ extension UIViewController {
         parentView.addSubview(childView)
         childView.frame.size = parentView.frame.size
     }
+
+    func share(alarmTokenId: String) {
+        let activityVC = UIActivityViewController(activityItems: [alarmTokenId], applicationActivities: nil)
+
+        self.present(activityVC, animated: true, completion: nil)
+    }
+
+    func createAlarmTokenId(alarmId: String, userId: String)-> String {
+        return "\(alarmId)@\(userId)"
+    }
+
 }

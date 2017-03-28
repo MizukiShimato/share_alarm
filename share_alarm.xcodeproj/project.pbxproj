@@ -33,6 +33,8 @@
 		A334CC5C1E16CB1C006A7645 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A334CC5B1E16CB1C006A7645 /* GoogleService-Info.plist */; };
 		A334CC5D1E16CB1C006A7645 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A334CC5B1E16CB1C006A7645 /* GoogleService-Info.plist */; };
 		A334CC5E1E16CB1C006A7645 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A334CC5B1E16CB1C006A7645 /* GoogleService-Info.plist */; };
+		A3352AA51E86C16A0012E823 /* AlarmListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3352AA41E86C16A0012E823 /* AlarmListCell.xib */; };
+		A3352AA71E86C1C80012E823 /* AlarmListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3352AA61E86C1C80012E823 /* AlarmListCell.swift */; };
 		A33DFEDE1E3BA9E300BC17EF /* InviteInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33DFEDD1E3BA9E300BC17EF /* InviteInputViewController.swift */; };
 		A33DFEE61E3BAE5100BC17EF /* InviteInput.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A33DFEE51E3BAE5100BC17EF /* InviteInput.storyboard */; };
 		A33DFEE81E3BB19000BC17EF /* InviteCodeInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33DFEE71E3BB19000BC17EF /* InviteCodeInputViewController.swift */; };
@@ -107,6 +109,8 @@
 		A31470671E0675CA00AEE46B /* TrackList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrackList.xib; sourceTree = "<group>"; };
 		A31C70F91E1BF32500B6DB6B /* MusicSelector.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MusicSelector.storyboard; sourceTree = "<group>"; };
 		A334CC5B1E16CB1C006A7645 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A3352AA41E86C16A0012E823 /* AlarmListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlarmListCell.xib; sourceTree = "<group>"; };
+		A3352AA61E86C1C80012E823 /* AlarmListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmListCell.swift; sourceTree = "<group>"; };
 		A33DFEDD1E3BA9E300BC17EF /* InviteInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteInputViewController.swift; sourceTree = "<group>"; };
 		A33DFEE51E3BAE5100BC17EF /* InviteInput.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InviteInput.storyboard; sourceTree = "<group>"; };
 		A33DFEE71E3BB19000BC17EF /* InviteCodeInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteCodeInputViewController.swift; sourceTree = "<group>"; };
@@ -213,6 +217,7 @@
 		8FBA881E1DFD26BE00A2FC61 /* share_alarm */ = {
 			isa = PBXGroup;
 			children = (
+				A3352AA31E86C1110012E823 /* alarmList */,
 				A37B70471E7314E400337BDE /* alarmCreateView */,
 				A385F4271E6F06EC0036AC74 /* alarmDetail */,
 				A3EA1B461E5F3AD300A9FD32 /* Login */,
@@ -285,6 +290,15 @@
 				A31470671E0675CA00AEE46B /* TrackList.xib */,
 			);
 			name = view;
+			sourceTree = "<group>";
+		};
+		A3352AA31E86C1110012E823 /* alarmList */ = {
+			isa = PBXGroup;
+			children = (
+				A3352AA41E86C16A0012E823 /* AlarmListCell.xib */,
+				A3352AA61E86C1C80012E823 /* AlarmListCell.swift */,
+			);
+			name = alarmList;
 			sourceTree = "<group>";
 		};
 		A33DFEDF1E3BACCD00BC17EF /* InviteInput */ = {
@@ -489,6 +503,7 @@
 				A31470661E06755800AEE46B /* TrackListCell.xib in Resources */,
 				A31C70FA1E1BF32500B6DB6B /* MusicSelector.storyboard in Resources */,
 				A37B704D1E731F4C00337BDE /* AlarmCreate.storyboard in Resources */,
+				A3352AA51E86C16A0012E823 /* AlarmListCell.xib in Resources */,
 				A3EA1B481E5F3BA600A9FD32 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -645,6 +660,7 @@
 				A3EA1B451E5F3A5500A9FD32 /* LoginViewController.swift in Sources */,
 				A334CC501E16B2DD006A7645 /* Alarm.swift in Sources */,
 				A37B70551E73242C00337BDE /* AlarmConfirmViewController.swift in Sources */,
+				A3352AA71E86C1C80012E823 /* AlarmListCell.swift in Sources */,
 				A35A91B61E42360C00CACD77 /* AlarmService.swift in Sources */,
 				A33DFEEA1E3BB1C800BC17EF /* InviteConfirmViewController.swift in Sources */,
 				A37B705B1E75516000337BDE /* JoinedUserCell.swift in Sources */,

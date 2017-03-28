@@ -20,6 +20,13 @@ class AlarmDetailViewControlle : UIViewController {
     var alarm: Alarm? = nil
     
     
+    @IBAction func onTapShareButton(_ sender: Any) {
+        if let alarm = alarm, let alarmId = alarm.id, let userId = alarm.userId {
+            share(alarmTokenId: createAlarmTokenId(alarmId: alarmId, userId: userId))
+        }
+    }
+    
+    
     @IBAction func onClickOyasumi(_ sender: Any) {
         let storyBoard = UIStoryboard(name: "SubscribeAlarm", bundle: nil)
         let vc = storyBoard.instantiateViewController(withIdentifier: "SubscribeAlarm") as! SubscribeAlarmViewController

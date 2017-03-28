@@ -37,12 +37,7 @@ class AlarmConfirmViewController : UIViewController, AlarmCreateShare {
         alarmTitle.text = alarm.title
         
     }
-    
-    func share(alarmTokenId: String) {
-        let activityVC = UIActivityViewController(activityItems: [alarmTokenId], applicationActivities: nil)
-        
-        self.present(activityVC, animated: true, completion: nil)
-    }
+
     
     func sendAlarm(_ alarm : Alarm, cb: @escaping (String) -> Void) {
         let instance = AlarmService.instance()
