@@ -22,10 +22,13 @@ class AlertListViewController: UIViewController, UITableViewDelegate, UITableVie
         
         instance.getMyList { fetchedAlarms in
             dump(fetchedAlarms)
-            let now = Date()
+            let yesterday = Date(timeInterval: (-60 * 60 * 24), since: Date())
             self.alarms = fetchedAlarms.filter { alarm in
-                alarm.time! > now
-            };
+                alarm.time! > yesterday
+                } .sorted {
+                    (alarm_1, alarm_2) in
+                    alarm_1.time! > alarm_2.time!
+                }
             self.tableView.reloadData()
         }
     }

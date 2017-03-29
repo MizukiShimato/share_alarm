@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 import AVFoundation
 import AVKit
+import AudioToolbox
+
 
 class SubscribeAlarmViewController : UIViewController {
     var alarm: Alarm?
@@ -17,6 +19,7 @@ class SubscribeAlarmViewController : UIViewController {
     var avPlayer: AVPlayer!
     var avLayer: AVPlayerLayer!
     var userListView: JoinedUserList!
+    var vibrationScheduler: Timer?
     
     @IBOutlet weak var timeLimitLabel: UILabel!
     
@@ -31,20 +34,38 @@ class SubscribeAlarmViewController : UIViewController {
         initUserListView(alarm: alarm)
         wakeupSwitch.isEnabled = false
         wakeupSwitch.isOn = false
-        self.initUserListView(alarm: alarm)
+        initUserListView(alarm: alarm)
         if let alarm = alarm {
             AlarmService.instance().getOne(id: alarm.id!, userId: alarm.userId!) { subAlarm in
                 self.alarm = subAlarm
                 if let subAlarm = subAlarm {
-                    UIApplication.shared.isIdleTimerDisabled = true
-                    self.subscribeToken = AlarmService.instance().subscribe(alarm: subAlarm, cb: self.subscribeAlarm)
-                    self.startAlarmTimer(alarm, wokeupDate: alarm.time!)
+                    if subAlarm.time! < Date() {
+                        self.setAlarmFinishedMessage()
+                    } else {
+                        UIApplication.shared.isIdleTimerDisabled = true
+                        self.subscribeToken = AlarmService.instance().subscribe(alarm: subAlarm, cb: self.subscribeAlarm)
+                        self.startAlarmTimer(alarm, wokeupDate: alarm.time!)
+                    }
                 }
             }
         }
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+    }
+    
+    func startVibration() {
+        if (alarm?.vibration)! {
+            vibrationScheduler = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
+                AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
+            }
+            
+            vibrationScheduler?.fire()
+        }
+    }
+    
+    func stopVibration() {
+        vibrationScheduler?.invalidate()
     }
     
     func initUserListView(alarm: Alarm?) {
@@ -67,6 +88,10 @@ class SubscribeAlarmViewController : UIViewController {
         }
     }
     
+    func setAlarmFinishedMessage() {
+        timeLimitLabel.text = "このアラームは終了しています"
+    }
+    
     func subscribeAlarm(alarm: Alarm?) {
         if let alarm = alarm {
             self.userListView.users = alarm.joiendUsers
@@ -78,7 +103,6 @@ class SubscribeAlarmViewController : UIViewController {
     func playAlarmMusic() {
         if let alarm = self.alarm, let musicURL = alarm.musicURL, let url = URL(string: musicURL) {
             dump(musicURL)
-            
             self.avPlayer = AVPlayer(url: url)
             self.avLayer = AVPlayerLayer(player: self.avPlayer!)
             self.avContainer.layer.addSublayer(self.avLayer!)
@@ -102,7 +126,9 @@ class SubscribeAlarmViewController : UIViewController {
     func wokeup() {
         if let alarm = self.alarm {
             AlarmService.instance().changeStateToWokeup(alarm)
+            // アラームの所持するユーザすべてが起床済みだったらpauseする
             avPlayer.pause() // とりあえず起きたら止める
+            stopVibration()
         }
     }
     
@@ -112,6 +138,7 @@ class SubscribeAlarmViewController : UIViewController {
             self.updateTimerView(time: Int(currentDate.timeIntervalSinceReferenceDate.distance(to: wokeupDate.timeIntervalSinceReferenceDate)))
             if currentDate > wokeupDate {
                 self.wakeupSwitch.isEnabled = true
+                self.startVibration()
                 self.playAlarmMusic()
                 timer.invalidate()
             }
@@ -129,9 +156,9 @@ class SubscribeAlarmViewController : UIViewController {
     func updateView(alarm: Alarm) {
 //        dump(alarm.joiendUsers) //参加ユーザの状態変更
     }
+
     func share(message: String) {
         let activityVC = UIActivityViewController(activityItems: [message], applicationActivities: nil)
-        
         self.present(activityVC, animated: true, completion: nil)
     }
     
