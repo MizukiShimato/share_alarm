@@ -25,6 +25,7 @@ class AlarmTitleViewController : UIViewController, AlarmCreateShare, UITextField
             if title.characters.count > 0 {
                 nextButton.isEnabled = true
             } else {
+                // ボタン色変更
                 nextButton.isEnabled = false
             }
             setTitle(title: title)
@@ -40,7 +41,7 @@ class AlarmTitleViewController : UIViewController, AlarmCreateShare, UITextField
         }
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         titleForm.resignFirstResponder()
         return true
     }

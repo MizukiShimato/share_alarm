@@ -9,10 +9,11 @@
 import Foundation
 import UIKit
 
-class InviteCodeInputViewController: UIViewController {
+class InviteCodeInputViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var inputCodeForm: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        inputCodeForm.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
     }
     @IBAction func sendCodeButton(_ sender: Any) {
@@ -34,6 +35,11 @@ class InviteCodeInputViewController: UIViewController {
                 }
             }
         }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
     override func didReceiveMemoryWarning() {
