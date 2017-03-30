@@ -11,7 +11,20 @@ import UIKit
 class AlertListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var alarms: [Alarm] = [Alarm]()
-    
+    override func viewDidAppear(_ animated: Bool) {
+        let instance = AlarmService.instance()
+
+        instance.getMyList { fetchedAlarms in
+            let yesterday = Date(timeInterval: (-60 * 60 * 24), since: Date())
+            self.alarms = fetchedAlarms.filter { alarm in
+                alarm.time! > yesterday
+                } .sorted {
+                    (alarm_1, alarm_2) in
+                    alarm_1.time! > alarm_2.time!
+            }
+            self.tableView.reloadData()
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.reloadData()
@@ -20,8 +33,9 @@ class AlertListViewController: UIViewController, UITableViewDelegate, UITableVie
         
         let instance = AlarmService.instance()
         
+        // TODO viewDidAppearでもフェッチする
+        
         instance.getMyList { fetchedAlarms in
-            dump(fetchedAlarms)
             let yesterday = Date(timeInterval: (-60 * 60 * 24), since: Date())
             self.alarms = fetchedAlarms.filter { alarm in
                 alarm.time! > yesterday
