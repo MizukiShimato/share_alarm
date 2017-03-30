@@ -26,6 +26,7 @@ class InviteCodeInputViewController: UIViewController, UITextFieldDelegate {
             let alarmId = splitedText[0]
             AlarmService.instance().getOne(id: alarmId, userId: userId) { alarm in
                 if alarm == nil {
+                    self.appearAlarmDialog(message: "招待コードに該当するアラームがありませんでした", cb: {})
                 }
                 else {
                     let storyboard: UIStoryboard = self.storyboard!

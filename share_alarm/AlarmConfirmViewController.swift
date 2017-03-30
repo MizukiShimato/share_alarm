@@ -33,7 +33,11 @@ class AlarmConfirmViewController : UIViewController, AlarmCreateShare {
         if let vib = alarm.vibration {
             vibLabel.text = vib ? "オン" : "オフ"
         }
-        musicTitle.text = selectedMusicTitle
+        
+        if(alarm.musicURL?.characters.count == 0) {
+            alarm.musicURL = "__omakase__"
+        }
+        musicTitle.text = selectedMusicTitle.characters.count > 0 ? selectedMusicTitle : "おまかせ"
         alarmTitle.text = alarm.title
         
     }

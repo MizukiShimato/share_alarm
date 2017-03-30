@@ -9,9 +9,28 @@
 import UIKit
 
 class TopViewController: UIViewController {
+    
+    @IBOutlet weak var createAlarmButton: UIButton!
+    @IBOutlet weak var listAlarmButton: UIButton!
+    @IBOutlet weak var inviteCodeButton: UIButton!
+    
+    func disableButtons() {
+        createAlarmButton.isEnabled = false
+        listAlarmButton.isEnabled = false
+        inviteCodeButton.isEnabled = false
+    }
+    
+    func enableButtons() {
+        createAlarmButton.isEnabled = true
+        listAlarmButton.isEnabled = true
+        inviteCodeButton.isEnabled = true
+    }
+    
     static private var firstMount = false
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        disableButtons()
 
         if !TopViewController.firstMount {
             loginCheck()
@@ -25,10 +44,14 @@ class TopViewController: UIViewController {
         let storyBoard = UIStoryboard(name: "Login", bundle: nil)
         let selector = storyBoard.instantiateViewController(withIdentifier: "MainPage") as! LoginViewController
         
-        selector.loginCheck { (bool) in
+        selector.loginCheck { (logined) in
             TopViewController.firstMount = true
-            if !bool {
-                self.present(selector, animated: true, completion: nil)
+            if !logined {
+                self.present(selector, animated: true, completion: {
+                    self.enableButtons()
+                })
+            } else {
+                self.enableButtons()
             }
         }
     }

@@ -41,5 +41,4 @@ extension UIViewController {
         // UIAlertの起動
         present(alertController, animated: true, completion: nil)
     }
-
 }
