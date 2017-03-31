@@ -12,6 +12,15 @@
 		2B8DF884EEC22A4BD7F4A6B3 /* Pods_share_alarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9CAE6CDE8DB8B6D00CE5A9F /* Pods_share_alarm.framework */; };
 		8F0899461E3B68BF00D75CE0 /* AlertListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0899451E3B68BF00D75CE0 /* AlertListViewController.swift */; };
 		8F52A8E61E8B580C006FBC06 /* Design.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F52A8E51E8B580C006FBC06 /* Design.storyboard */; };
+		8F796DFC1E8BA230002CE9B7 /* sun.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F796DFA1E8BA230002CE9B7 /* sun.png */; };
+		8F796E001E8BA3BF002CE9B7 /* cloud2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F796DFF1E8BA3BF002CE9B7 /* cloud2.png */; };
+		8F796E041E8BA565002CE9B7 /* flower3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8F796E031E8BA565002CE9B7 /* flower3.gif */; };
+		8F796E061E8BA56B002CE9B7 /* flower.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8F796E051E8BA56B002CE9B7 /* flower.gif */; };
+		8F796E081E8BA64A002CE9B7 /* flower3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F796E071E8BA64A002CE9B7 /* flower3.png */; };
+		8F796E0A1E8BA708002CE9B7 /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F796E091E8BA708002CE9B7 /* cloud.png */; };
+		8F796E0C1E8BA76F002CE9B7 /* flower2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8F796E0B1E8BA76F002CE9B7 /* flower2.gif */; };
+		8F796E101E8BA849002CE9B7 /* chou.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F796E0F1E8BA849002CE9B7 /* chou.png */; };
+		8F796E121E8BA8D4002CE9B7 /* flower2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8F796E111E8BA8D4002CE9B7 /* flower2.gif */; };
 		8FBA88201DFD26BE00A2FC61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA881F1DFD26BE00A2FC61 /* AppDelegate.swift */; };
 		8FBA88221DFD26BE00A2FC61 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA88211DFD26BE00A2FC61 /* TopViewController.swift */; };
 		8FBA88251DFD26BE00A2FC61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FBA88231DFD26BE00A2FC61 /* Main.storyboard */; };
@@ -84,6 +93,15 @@
 		6110475384A2DCAC00E35A04 /* Pods-share_alarmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-share_alarmTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-share_alarmTests/Pods-share_alarmTests.release.xcconfig"; sourceTree = "<group>"; };
 		8F0899451E3B68BF00D75CE0 /* AlertListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertListViewController.swift; sourceTree = "<group>"; };
 		8F52A8E51E8B580C006FBC06 /* Design.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Design.storyboard; sourceTree = "<group>"; };
+		8F796DFA1E8BA230002CE9B7 /* sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sun.png; path = ../../../../sun.png; sourceTree = "<group>"; };
+		8F796DFF1E8BA3BF002CE9B7 /* cloud2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cloud2.png; path = ../../../../cloud2.png; sourceTree = "<group>"; };
+		8F796E031E8BA565002CE9B7 /* flower3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = flower3.gif; path = ../../../../flower3.gif; sourceTree = "<group>"; };
+		8F796E051E8BA56B002CE9B7 /* flower.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = flower.gif; path = ../../../../flower.gif; sourceTree = "<group>"; };
+		8F796E071E8BA64A002CE9B7 /* flower3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flower3.png; path = ../../../../flower3.png; sourceTree = "<group>"; };
+		8F796E091E8BA708002CE9B7 /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cloud.png; path = ../../../../cloud.png; sourceTree = "<group>"; };
+		8F796E0B1E8BA76F002CE9B7 /* flower2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = flower2.gif; path = ../../../../flower2.gif; sourceTree = "<group>"; };
+		8F796E0F1E8BA849002CE9B7 /* chou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chou.png; path = ../../../../chou.png; sourceTree = "<group>"; };
+		8F796E111E8BA8D4002CE9B7 /* flower2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = flower2.gif; path = ../../../../flower2.gif; sourceTree = "<group>"; };
 		8FBA881C1DFD26BE00A2FC61 /* share_alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = share_alarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FBA881F1DFD26BE00A2FC61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FBA88211DFD26BE00A2FC61 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
@@ -232,6 +250,11 @@
 				8FBA88501DFD2F4400A2FC61 /* Model */,
 				8FBA881F1DFD26BE00A2FC61 /* AppDelegate.swift */,
 				8FBA88211DFD26BE00A2FC61 /* TopViewController.swift */,
+				8F796E031E8BA565002CE9B7 /* flower3.gif */,
+				8F796E071E8BA64A002CE9B7 /* flower3.png */,
+				8F796DFF1E8BA3BF002CE9B7 /* cloud2.png */,
+				8F796DFA1E8BA230002CE9B7 /* sun.png */,
+				8F796E051E8BA56B002CE9B7 /* flower.gif */,
 				8FBA88231DFD26BE00A2FC61 /* Main.storyboard */,
 				8F52A8E51E8B580C006FBC06 /* Design.storyboard */,
 				8FBA884D1DFD2C3500A2FC61 /* AlarmCreateViewController.swift */,
@@ -311,6 +334,9 @@
 				A33DFEE51E3BAE5100BC17EF /* InviteInput.storyboard */,
 				A33DFEE71E3BB19000BC17EF /* InviteCodeInputViewController.swift */,
 				A33DFEE91E3BB1C800BC17EF /* InviteConfirmViewController.swift */,
+				8F796E0F1E8BA849002CE9B7 /* chou.png */,
+				8F796E111E8BA8D4002CE9B7 /* flower2.gif */,
+				8F796E0B1E8BA76F002CE9B7 /* flower2.gif */,
 			);
 			name = InviteInput;
 			sourceTree = "<group>";
@@ -327,6 +353,7 @@
 			isa = PBXGroup;
 			children = (
 				A37B704C1E731F4C00337BDE /* AlarmCreate.storyboard */,
+				8F796E091E8BA708002CE9B7 /* cloud.png */,
 				A37B704E1E7323C000337BDE /* AlarmTitleViewController.swift */,
 				A37B70501E7323E600337BDE /* AlarmDateViewController.swift */,
 				A37B70521E7323FB00337BDE /* AlarmVibMusicVIewController.swift */,
@@ -496,20 +523,29 @@
 			files = (
 				A31470681E0675CA00AEE46B /* TrackList.xib in Resources */,
 				A37B70591E75511100337BDE /* JoinedUserCellView.xib in Resources */,
+				8F796E101E8BA849002CE9B7 /* chou.png in Resources */,
 				8F52A8E61E8B580C006FBC06 /* Design.storyboard in Resources */,
 				A334CC5C1E16CB1C006A7645 /* GoogleService-Info.plist in Resources */,
 				A33DFEE61E3BAE5100BC17EF /* InviteInput.storyboard in Resources */,
+				8F796E0A1E8BA708002CE9B7 /* cloud.png in Resources */,
 				8FBA882A1DFD26BE00A2FC61 /* LaunchScreen.storyboard in Resources */,
+				8F796DFC1E8BA230002CE9B7 /* sun.png in Resources */,
 				8FBA88271DFD26BE00A2FC61 /* Assets.xcassets in Resources */,
 				A37B705F1E7552CF00337BDE /* JoinedUserListView.xib in Resources */,
 				8FBA88251DFD26BE00A2FC61 /* Main.storyboard in Resources */,
+				8F796E041E8BA565002CE9B7 /* flower3.gif in Resources */,
 				A385F4291E6F070A0036AC74 /* AlarmDetail.storyboard in Resources */,
+				8F796E081E8BA64A002CE9B7 /* flower3.png in Resources */,
 				A3EA1B4A1E687AC400A9FD32 /* SubscribeAlarm.storyboard in Resources */,
+				8F796E061E8BA56B002CE9B7 /* flower.gif in Resources */,
 				A31470661E06755800AEE46B /* TrackListCell.xib in Resources */,
 				A31C70FA1E1BF32500B6DB6B /* MusicSelector.storyboard in Resources */,
+				8F796E0C1E8BA76F002CE9B7 /* flower2.gif in Resources */,
 				A37B704D1E731F4C00337BDE /* AlarmCreate.storyboard in Resources */,
 				A3352AA51E86C16A0012E823 /* AlarmListCell.xib in Resources */,
+				8F796E121E8BA8D4002CE9B7 /* flower2.gif in Resources */,
 				A3EA1B481E5F3BA600A9FD32 /* Login.storyboard in Resources */,
+				8F796E001E8BA3BF002CE9B7 /* cloud2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
