@@ -36,8 +36,13 @@ class AlartFilebase {
         alarmDbref.child(userId).child(alarm.id!).child(joinedUsersKey).child(user.id).setValue(user.toHash())
     }
     
+    func joinUser(userId: String, alarm: Alarm) {
+        userDbref.child(userId).child(userAlarmKey).child(alarm.id!).setValue(alarm.toHash())
+    }
+    
     func get(id: String, userId: String, cb: @escaping (Alarm?) -> Void) {
         userDbref.child(userId).child(userAlarmKey).child(id).observeSingleEvent(of: .value, with: { (db) in
+            dump(db)
             if (db.value is NSNull) {
                 return cb(nil)
             }

@@ -61,6 +61,8 @@ class AlarmService {
     func registration(_ alarm: Alarm) {
         getMe { me in
             gateway.updateUserStatus(userId: alarm.userId!, alarm: alarm, user: JoinedUser(id: me.id, name: me.name, status: JoinedUserStatus.Joined))
+            
+            gateway.joinUser(userId: me.id, alarm: alarm)
         }
     }
     
