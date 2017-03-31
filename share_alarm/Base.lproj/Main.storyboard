@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q6e-Gn-CGG">
-                                <rect key="frame" x="65" y="411" width="244" height="84"/>
+                                <rect key="frame" x="65" y="429" width="244" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99024170637130737" green="0.82965016334890451" blue="0.92600114276554668" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -43,7 +43,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U6w-Le-jaz">
-                                <rect key="frame" x="65" y="313" width="244" height="85"/>
+                                <rect key="frame" x="65" y="331" width="244" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.97064334154129028" green="0.82596093416213989" blue="0.92313885688781738" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -63,10 +63,10 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="clip" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnL-Gw-7M0">
-                                <rect key="frame" x="42" y="157" width="294" height="38"/>
+                                <rect key="frame" x="69" y="155" width="294" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="シェアアラーム">
+                                    <fragment content="シェアラーム">
                                         <attributes>
                                             <color key="NSColor" red="1" green="0.3849838447791849" blue="0.14724031650790992" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="40" name="HiraginoSans-W6"/>
@@ -83,7 +83,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="- イマナンジ81 -" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6c-9E-Ejz">
-                                <rect key="frame" x="0.0" y="582" width="375" height="85"/>
+                                <rect key="frame" x="0.0" y="592" width="375" height="75"/>
                                 <color key="backgroundColor" red="0.27137356620000003" green="0.63878093270000003" blue="0.26859707910000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="yOp-Yc-9aH"/>
@@ -93,7 +93,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zby-GU-XFz">
-                                <rect key="frame" x="65" y="207" width="244" height="92"/>
+                                <rect key="frame" x="65" y="225" width="244" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.97119778394699097" green="0.82927042245864868" blue="0.92316001653671265" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="アラーム作成">
@@ -115,13 +115,20 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud2.png" translatesAutoresizingMaskIntoConstraints="NO" id="cSC-QQ-gvM">
-                                <rect key="frame" x="176" y="85" width="157" height="56"/>
+                                <rect key="frame" x="179" y="85" width="157" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flower3.png" translatesAutoresizingMaskIntoConstraints="NO" id="Epe-Wl-eod">
-                                <rect key="frame" x="198" y="503" width="161" height="98"/>
+                                <rect key="frame" x="214" y="528" width="131" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RqY-eo-6Nj">
+                                <rect key="frame" x="53" y="203" width="43" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.46031230022459468" green="0.3258406890973311" blue="0.18091524920884236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.70373266594996753" green="0.82857309143453661" blue="0.99024170637130737" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -290,7 +297,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fp6-sk-YlN" id="flr-f4-6Gn">
-                                                    <rect key="frame" x="0.0" y="0.0" width="342" height="44"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </tableViewCellContentView>
                                             </tableViewCell>

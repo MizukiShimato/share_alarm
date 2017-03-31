@@ -58,24 +58,6 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CIV-im-FFF">
-                                <rect key="frame" x="74" y="267" width="84" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.96621192889999996" green="0.67767905650000004" blue="0.42194165039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="ログイン">
-                                            <attributes>
-                                                <font key="NSFont" size="18" name="HiraginoSans-W6"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <action selector="tapLoginBtn:" destination="Uv1-J0-XbX" eventType="touchUpInside" id="sGI-PU-0IK"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BmZ-It-Zbc">
                                 <rect key="frame" x="215" y="267" width="85" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -109,6 +91,28 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bird.png" translatesAutoresizingMaskIntoConstraints="NO" id="mF6-lD-3Lx">
+                                <rect key="frame" x="0.0" y="513" width="375" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CIV-im-FFF">
+                                <rect key="frame" x="78" y="267" width="84" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96621192889999996" green="0.67767905650000004" blue="0.42194165039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="ログイン">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="HiraginoSans-W6"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="tapLoginBtn:" destination="Uv1-J0-XbX" eventType="touchUpInside" id="sGI-PU-0IK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.70075440410000001" green="0.82578700780000003" blue="0.99156457190000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -122,4 +126,7 @@
             <point key="canvasLocation" x="-12" y="-219.04047976011995"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bird.png" width="1509" height="325"/>
+    </resources>
 </document>
