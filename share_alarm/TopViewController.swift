@@ -79,6 +79,14 @@ class TopViewController: UIViewController {
         let page = storyBoard.instantiateViewController(withIdentifier: "AlarmCreateInputTitle") as! AlarmTitleViewController
         self.navigationController?.pushViewController(page, animated: true)
     }
+    
+    
+    @IBAction func onRefresh(_ sender: Any) {
+        let user = UserDefaults.standard
+        user.removeObject(forKey: "password")
+        user.removeObject(forKey: "user_name")
+        loginCheck()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
