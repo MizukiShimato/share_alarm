@@ -42,7 +42,6 @@ class AlartFilebase {
     
     func get(id: String, userId: String, cb: @escaping (Alarm?) -> Void) {
         userDbref.child(userId).child(userAlarmKey).child(id).observeSingleEvent(of: .value, with: { (db) in
-            dump(db)
             if (db.value is NSNull) {
                 return cb(nil)
             }
@@ -64,13 +63,18 @@ class AlartFilebase {
     }
     
     func subscribe(userId: String, alarm: Alarm, cb: @escaping ((Alarm?) -> Void)) -> UInt {
-        return alarmDbref.child(userId).child(alarm.id!).observe(.value, with: { db in
-            cb(AlartFilebase.toModel(db.value as! Dictionary<String, AnyObject>))
+        dump(userId)
+        return alarmDbref.child(alarm.userId!).child(alarm.id!).observe(.value, with: { db in
+            if let v = db.value, v is NSNull {
+                
+            } else {
+                cb(AlartFilebase.toModel(db.value as! Dictionary<String, AnyObject>))
+            }
         })
     }
     
     func unsubscribe(userId: String, alarm: Alarm, handlerId: UInt) {
-        alarmDbref.child(userId).child(alarm.id!).removeObserver(withHandle: handlerId)
+        alarmDbref.child(alarm.userId!).child(alarm.id!).removeObserver(withHandle: handlerId)
     }
     
     static func joinedUserToModel(_ dict: [String: AnyObject]) -> JoinedUser? {

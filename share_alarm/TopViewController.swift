@@ -54,6 +54,10 @@ class TopViewController: UIViewController {
                 self.enableButtons()
             }
         }
+        
+//        self.present(selector, animated: true, completion: {
+//            self.enableButtons()
+//        })
     }
     @IBAction func tapInvitePageJump(_ sender: Any) {
         jumpInvitePage()
