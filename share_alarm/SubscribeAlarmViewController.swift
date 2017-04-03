@@ -102,7 +102,6 @@ class SubscribeAlarmViewController : UIViewController {
     
     func playAlarmMusic() {
         if let alarm = self.alarm, let musicURL = alarm.musicURL, let url = URL(string: musicURL) {
-            dump(musicURL)
             self.avPlayer = AVPlayer(url: url)
             self.avLayer = AVPlayerLayer(player: self.avPlayer!)
             self.avContainer.layer.addSublayer(self.avLayer!)
