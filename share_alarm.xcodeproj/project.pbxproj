@@ -20,7 +20,7 @@
 		8F796E0C1E8BA76F002CE9B7 /* flower2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8F796E0B1E8BA76F002CE9B7 /* flower2.gif */; };
 		8F796E101E8BA849002CE9B7 /* chou.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F796E0F1E8BA849002CE9B7 /* chou.png */; };
 		8F796E121E8BA8D4002CE9B7 /* flower2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8F796E111E8BA8D4002CE9B7 /* flower2.gif */; };
-		8F796E161E8E9458002CE9B7 /* bird.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F796E151E8E9458002CE9B7 /* bird.png */; };
+		8F796E161E8E9458002CE9B7 /* .. in Resources */ = {isa = PBXBuildFile; fileRef = 8F796E151E8E9458002CE9B7 /* .. */; };
 		8F796E181E8E959D002CE9B7 /* bird2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F796E171E8E959D002CE9B7 /* bird2.png */; };
 		8FBA88201DFD26BE00A2FC61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA881F1DFD26BE00A2FC61 /* AppDelegate.swift */; };
 		8FBA88221DFD26BE00A2FC61 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA88211DFD26BE00A2FC61 /* TopViewController.swift */; };
@@ -93,16 +93,16 @@
 		513A098B880ADDAC24171B34 /* Pods-share_alarmUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-share_alarmUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-share_alarmUITests/Pods-share_alarmUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6110475384A2DCAC00E35A04 /* Pods-share_alarmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-share_alarmTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-share_alarmTests/Pods-share_alarmTests.release.xcconfig"; sourceTree = "<group>"; };
 		8F0899451E3B68BF00D75CE0 /* AlertListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertListViewController.swift; sourceTree = "<group>"; };
-		8F796DFA1E8BA230002CE9B7 /* sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sun.png; path = ../../../../sun.png; sourceTree = "<group>"; };
-		8F796DFF1E8BA3BF002CE9B7 /* cloud2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cloud2.png; path = ../../../../cloud2.png; sourceTree = "<group>"; };
-		8F796E031E8BA565002CE9B7 /* flower3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = flower3.gif; path = ../../../../flower3.gif; sourceTree = "<group>"; };
-		8F796E051E8BA56B002CE9B7 /* flower.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = flower.gif; path = ../../../../flower.gif; sourceTree = "<group>"; };
-		8F796E071E8BA64A002CE9B7 /* flower3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flower3.png; path = ../../../../flower3.png; sourceTree = "<group>"; };
-		8F796E091E8BA708002CE9B7 /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cloud.png; path = ../../../../cloud.png; sourceTree = "<group>"; };
+		8F796DFA1E8BA230002CE9B7 /* sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sun.png; path = ../Images/sun.png; sourceTree = "<group>"; };
+		8F796DFF1E8BA3BF002CE9B7 /* cloud2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cloud2.png; path = ../Images/cloud2.png; sourceTree = "<group>"; };
+		8F796E031E8BA565002CE9B7 /* flower3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = flower3.gif; path = ../Images/flower3.gif; sourceTree = "<group>"; };
+		8F796E051E8BA56B002CE9B7 /* flower.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = flower.gif; path = ../Images/flower.gif; sourceTree = "<group>"; };
+		8F796E071E8BA64A002CE9B7 /* flower3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flower3.png; path = ../Images/flower3.png; sourceTree = "<group>"; };
+		8F796E091E8BA708002CE9B7 /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cloud.png; path = ../Images/cloud.png; sourceTree = "<group>"; };
 		8F796E0B1E8BA76F002CE9B7 /* flower2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = flower2.gif; path = ../../../../flower2.gif; sourceTree = "<group>"; };
 		8F796E0F1E8BA849002CE9B7 /* chou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chou.png; path = ../../../../chou.png; sourceTree = "<group>"; };
 		8F796E111E8BA8D4002CE9B7 /* flower2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = flower2.gif; path = ../../../../flower2.gif; sourceTree = "<group>"; };
-		8F796E151E8E9458002CE9B7 /* bird.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bird.png; path = ../../../../bird.png; sourceTree = "<group>"; };
+		8F796E151E8E9458002CE9B7 /* .. */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ..; path = ../../..; sourceTree = "<group>"; };
 		8F796E171E8E959D002CE9B7 /* bird2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bird2.png; path = ../../../../bird2.png; sourceTree = "<group>"; };
 		8FBA881C1DFD26BE00A2FC61 /* share_alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = share_alarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FBA881F1DFD26BE00A2FC61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -400,7 +400,7 @@
 			children = (
 				A3EA1B441E5F3A5500A9FD32 /* LoginViewController.swift */,
 				A3EA1B471E5F3BA600A9FD32 /* Login.storyboard */,
-				8F796E151E8E9458002CE9B7 /* bird.png */,
+				8F796E151E8E9458002CE9B7 /* .. */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -526,7 +526,7 @@
 			files = (
 				A31470681E0675CA00AEE46B /* TrackList.xib in Resources */,
 				A37B70591E75511100337BDE /* JoinedUserCellView.xib in Resources */,
-				8F796E161E8E9458002CE9B7 /* bird.png in Resources */,
+				8F796E161E8E9458002CE9B7 /* .. in Resources */,
 				8F796E101E8BA849002CE9B7 /* chou.png in Resources */,
 				A334CC5C1E16CB1C006A7645 /* GoogleService-Info.plist in Resources */,
 				A33DFEE61E3BAE5100BC17EF /* InviteInput.storyboard in Resources */,
