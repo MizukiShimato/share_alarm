@@ -135,7 +135,7 @@ class SubscribeAlarmViewController : UIViewController {
     func checkStopAlarm(_ alarm: Alarm) {
         if alarm.joiendUsers.filter({ user in
             user.status == JoinedUserStatus.Wokeup
-        }).count == 0 {
+        }).count == alarm.joiendUsers.count {
             avPlayer.pause() // とりあえず起きたら止める
             stopVibration()
         }
