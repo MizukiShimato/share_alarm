@@ -42,6 +42,7 @@ class SubscribeAlarmViewController : UIViewController {
                     if subAlarm.time! < Date() {
                         self.setAlarmFinishedMessage()
                     } else {
+                        AlarmService.instance().changeStateToSleep(alarm)
                         UIApplication.shared.isIdleTimerDisabled = true
                         self.subscribeToken = AlarmService.instance().subscribe(alarm: subAlarm, cb: self.subscribeAlarm)
                         self.startAlarmTimer(alarm, wokeupDate: alarm.time!)
@@ -96,6 +97,7 @@ class SubscribeAlarmViewController : UIViewController {
         if let alarm = alarm {
             self.userListView.users = alarm.joiendUsers
             self.userListView.reloadData()
+            checkStopAlarm(alarm)
             updateView(alarm: alarm)
         }
     }
@@ -126,6 +128,14 @@ class SubscribeAlarmViewController : UIViewController {
         if let alarm = self.alarm {
             AlarmService.instance().changeStateToWokeup(alarm)
             // アラームの所持するユーザすべてが起床済みだったらpauseする
+            checkStopAlarm(alarm)
+        }
+    }
+    
+    func checkStopAlarm(_ alarm: Alarm) {
+        if alarm.joiendUsers.filter({ user in
+            user.status == JoinedUserStatus.Wokeup
+        }).count == 0 {
             avPlayer.pause() // とりあえず起きたら止める
             stopVibration()
         }
