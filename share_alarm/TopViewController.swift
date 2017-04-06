@@ -80,6 +80,9 @@ class TopViewController: UIViewController {
         self.navigationController?.pushViewController(page, animated: true)
     }
     
+    @IBAction func onLogout(_ sender: Any) {
+        onRefresh(sender)
+    }
     
     @IBAction func onRefresh(_ sender: Any) {
         let user = UserDefaults.standard
