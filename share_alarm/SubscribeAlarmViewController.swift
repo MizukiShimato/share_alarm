@@ -95,6 +95,7 @@ class SubscribeAlarmViewController : UIViewController {
     
     func subscribeAlarm(alarm: Alarm?) {
         if let alarm = alarm {
+            self.alarm = alarm
             self.userListView.users = alarm.joiendUsers
             self.userListView.reloadData()
             checkStopAlarm(alarm)
